@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> -->
+
+<body>
+    <input type="text" placeholder="Enter Name" id="Name">
+    </br>
+    </br>
+    <button onclick="my_fun()">Submit</button>
+    <p id="Showing_text"></p>
+    <script>
+        function my_fun() {
+            var take_value = document.getElementById("Name").value;
+            document.getElementById("Showing_text").innerHTML = take_value;
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)http://127.0.0.1:5500/form_project.html?username=&email=&password=&password= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <style>
+        #details input{
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            /* margin-left: 650px;
+            margin-right: 650px; */
+            width: 100%;
+            
+            
+        }
+        #image{
+            /* margin-top: 50px;   */
+            background-color:  azure;
+            
+            width: 100%;
+            
+            padding-top: 16px;
+        }
+        #sub{
+            margin-left: 125px;
+            margin-right: 125px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body style="background-color: whitesmoke;">
+    <form style="margin-left: auto;margin-right: auto; background-color:white; width: 300px; padding-left: 50px; padding-right: 50px; "> 
+    <div><h1 style="text-align: center; background-color: white;width: 300px;margin-right: auto;margin-left: auto; padding-top: 10px;">Register</h1></div>
+    <div id="image">
+        <span style="padding-right: 16px;"><img src="./Document_files/google.jpg" alt="google" width="50px" height="50px"></span>
+        <span style="padding-right: 16px;"><img src="./Document_files/fb.jpg" alt="fb" width="50px" height="50px"></span>
+        <span style="padding-right: 16px;"><img src="./Document_files/github.jpg" alt="github" width="50px" height="50px"></span>
+        <span style="padding-right: 16px;"><img src="./Document_files/linkedin.jpg" alt="linkedin" width="50px" height="50px"></span>
+    </div>
+    
+        
+        
+        <div id="details" style="margin-top: 50px; margin-bottom: 25px;">
+            <input type="text" placeholder="Username" name="username">
+        </div>
+        <div id="details" style="margin-bottom: 25px;">
+            <input type="email" placeholder="Email" name="email">
+        </div>
+        <div id="details" style="margin-bottom: 25px;">
+            <input type="password" placeholder="Password" name="password">
+        </div>
+        <div id="details" style="margin-bottom: 25px;">
+            <input type="password" placeholder="Conform Password" name="password">
+        </div>
+        <div>
+            <input id="sub" type="submit" value="Register" style="background-color: blue; color: white; border-color:blue; ">
+        </div>
+    </form>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
