@@ -1,266 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>New Tab</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    <script src="https://kit.fontawesome.com/cf602690d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-      #b1 {
-        background-color: grey;
-        float: right;
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        border-color: black;
-        cursor: pointer;
-      }
-      button#b1:hover {
-        width: 50px;
-        height: 50px;
+        #b1 {
+            background-color: grey;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            border-color: black;
+            cursor: pointer;
+            margin-right: 10px;
+        }
 
-        border-radius: 25px;
-      }
-      .dropdown {
-        padding-right: 5px;
+        button#b1:hover {
+            width: 50px;
+            height: 50px;
 
-        float: right;
-      }
-      .dropbtn {
-        font-size: 40px;
-        border-radius: 20px;
-        border: none;
-      }
-      button.dropbtn:hover {
-        cursor: pointer;
-      }
-      #b3 {
-        float: right;
-        padding-top: 10px;
-        padding-right: 5px;
-        color: black;
-      }
-      div#b3:hover {
-        cursor: pointer;
-        text-decoration-line: underline;
-      }
-      #b4 {
-        float: right;
-        padding-top: 10px;
-        padding-right: 10px;
-        color: black;
-      }
-      div#b4:hover {
-        cursor: pointer;
-        text-decoration-line: underline;
-      }
-      #b5 {
-        width: 800px;
-        height: 60px;
-        border-radius: 30px;
-      }
-      div.b5:hover {
-        text-align: center;
-      }
-      #img1 {
-        width: 20px;
-        height: 20px;
-        cursor: default;
-        position: absolute;
-        top: 405px;
-        right: 1090px;
-        
-      }
-      #img2 {
-        width: 400px;
-        height: 150px;
-        cursor: default;
-        padding-top: 150px;
+            border-radius: 25px;
+        }
 
-        margin-left: 500px;
-      }
-      #img3 {
-        width: 40px;
-        height: 40px;
+        .dropdown {
+            padding-right: 5px;
 
-        position: absolute;
-        top: 394px;
-        left: 980px;
-        cursor: pointer;
-      }
-      #img4 {
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 394px;
-        left: 1030px;
-        cursor: pointer;
-      }
-      .dropbtn {
-         background-color: gray;
-         padding: 10px;
-         margin-right: 15px;
-         font-size: 20px;
-         cursor: pointer;
-         border-color: black;
-      }
-      .dropdown {
-         position: relative;
-         display: inline-block;
-         
-      }
-      .dropText {
-         display: none;
-         position: absolute;
-         background-color: black;
-         min-width: 120px;
-         z-index: 1;
-         
-      }
-      .dropText a {
-         color: white;
-         padding: 12px 25px;
-         text-decoration: none;
-         display: block;
-      }
-      .dropText a:hover {
-         background-color: gray;
-         color: white;
-      }
-      .dropdown:hover .dropText {
-         display: block;
-      }
-      .dropdown:hover .dropbtn {
-         background-color: gray;
-      }
-      #b6{
-        margin-top: 25px;
-        margin-left: 600px;
-        padding: 12px;
-        border-color: black;
-        background-color: gray;
-        cursor: pointer;
-      }
-      #b7{
-        /* margin-top: 25px;*/
-        margin-left: 20px; 
-        padding: 12px;
-        border-color: black;
-        background-color: gray;
-        cursor: pointer;
-      }
-      button#b6:hover{
-           /* background-color: black; */
-           /* color: white; */
-           padding: 20px;
-           
-      }
-      button#b7:hover{
-           /* background-color: black;
-           color: white; */
-           padding: 20px;
-      }
-      #b8{
-        color: black;
-      }
-      a.a1:hover{
-        /* text-decoration-line: underline; */
-        font-size: 20px;
-      }
-      
-     
+            float: right;
+        }
+
+        .dropbtn {
+            font-size: 40px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        button.dropbtn:hover {
+            cursor: pointer;
+        }
+
+        #b3 {
+            float: right;
+            padding-top: 10px;
+            padding-right: 5px;
+            color: black;
+        }
+
+        div#b3:hover {
+            cursor: pointer;
+            text-decoration-line: underline;
+        }
+
+        #b4 {
+            float: right;
+            padding-top: 10px;
+            padding-right: 10px;
+            color: black;
+        }
+
+        div#b4:hover {
+            cursor: pointer;
+            text-decoration-line: underline;
+        }
+
+        #b5 {
+            width: 800px;
+            height: 60px;
+            border-radius: 30px;
+        }
+
+        div.b5:hover {
+            text-align: center;
+        }
+
+        #img2 {
+            width: 400px;
+            height: 150px;
+            cursor: default;
+            padding-top: 150px;
+
+            margin-left: 500px;
+        }
+
+
+        .dropbtn {
+            background-color: gray;
+            padding: 10px;
+            margin-right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            border-color: black;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .dropText {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 120px;
+            z-index: 1;
+
+        }
+
+        .dropText a {
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropText a:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        .dropdown:hover .dropText {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: gray;
+        }
+
+        #b6 {
+            margin-top: 25px;
+            margin-left: 600px;
+            padding: 12px;
+            border-color: black;
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        #b7 {
+            margin-left: 20px;
+            padding: 12px;
+            border-color: black;
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        button#b6:hover {
+            padding: 20px;
+
+        }
+
+        button#b7:hover {
+
+            padding: 20px;
+        }
+
+        #b8 {
+            color: black;
+        }
+
+        a.a1:hover {
+
+            font-size: 20px;
+        }
+
+        #element-box {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        #element:hover {
+            text-decoration: underline;
+        }
+
+        #glass {
+            border: 0px;
+            background-color: white;
+            height: 35px;
+            float: left;
+            padding-left: 35px;
+            border-radius: 40px;
+        }
+
+        #glass button {
+            border: 30px;
+        }
+
+        #mic {
+            padding-right: 15px;
+
+
+        }
+
+        #camera button {
+            background-color: white;
+            height: 35px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #mic button {
+            background-color: white;
+            height: 35px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #camera {
+            padding-right: 20px;
+
+        }
+
+        #tool {
+            float: right;
+        }
+
+        #search-box {
+            border: 0.5px solid black;
+            font-size: 5px;
+            border-radius: 30px;
+            font-weight: 3px;
+            width: 40%;
+            background-color: white;
+        }
+
+        #search {
+            width: 70%;
+            height: 35px;
+            border: 0px;
+            outline: none;
+        }
     </style>
-  </head>
-  <body style="background-color: grey; margin: 0; width: 1445px; height: 150px">
-    <header
-      style="
+</head>
+
+<body style="background-color: grey; margin: 0; width: 1445px; height: 150px">
+    <header style="
         background-color: rgb(173, 171, 171);
         width: 100%;
         height: 60px;
         padding-top: 20px;
-      "
-    >
-      <button id="b1">p</button>
-      <div class="dropdown"><button class="dropbtn"><img style="width: 20px;height: 20px;" src="https://static.thenounproject.com/png/3077554-200.png" alt=""></button>
-        <div class="dropText">
-            <a href="#">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
-               width="20" height="20"> GMail</a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/2295px-Google_Drive_icon_%282020%29.svg.png"
-               width="20" height="20">Drive</a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png"
-               width="20" height="20">Docs</a>
-            <a href="#">
+      ">
+        <button id="b1">p</button>
+        <div class="dropdown"><button class="dropbtn"><img style="width: 20px;height: 20px;"
+                    src="https://static.thenounproject.com/png/3077554-200.png" alt=""></button>
+            <div class="dropText">
                 <a href="#">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965327.png"
-                       width="20" height="20"> Sheets</a>
-                    <a href="#"><img src="data:image/png;base64,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"
-                       width="20" height="20">Slides</a>
-                    <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-03-512.png"
-                       width="20" height="20">Calender</a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+                        width="20" height="20"> GMail</a>
+                <a href="#"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/2295px-Google_Drive_icon_%282020%29.svg.png"
+                        width="20" height="20">Drive</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png" width="20"
+                        height="20">Docs</a>
+                <a href="#">
                     <a href="#">
-         </div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965327.png" width="20" height="20">
+                        Sheets</a>
+                    <a href="#"><img
+                            src="data:image/png;base64,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"
+                            width="20" height="20">Slides</a>
+                    <a href="#"><img
+                            src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-03-512.png"
+                            width="20" height="20">Calender</a>
+                    <a href="#">
+            </div>
         </div>
-      <div id="b3">Images</div>
-      <div id="b4">Gmail</div>
+        <div id="b3">Images</div>
+        <div id="b4">Gmail</div>
     </header>
-
-    <img
-      id="img2"
-      src="https://cdn.freebiesupply.com/images/large/2x/google-logo-black-transparent.png"
-      alt=""
-    />
-
-    <input
-      style="
-        text-align: center;
-        margin-top: 6px;
-        border: none;
-        margin-left: 300px;
-        width: 800px;
-        height: 50px;
-        font-size: medium;
-        border-radius: 25px;
-        position: relative;
-      "
-      type="search"
-      placeholder="Search Google or Type Url"
-    />
-    <img
-      id="img1"
-      src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-18.png"      
-       alt="image"
-    />
-
-    <img
-      id="img3"
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbU3j82zvW3r70UDmPpbIuDoL_dWebIf6yPW2o2SVLgOIK790lwcioLkYiCfmDknNGubs&usqp=CAU"
-      alt=""
-    />
-    <img
-      id="img4"
-      src="https://play-lh.googleusercontent.com/G5oF0mhpOcQzFTrU6TDUL0JoAjzRt38weiZKua7L61WVT1z3dPcE9gUu-W2EwtM9cZU=w240-h480-rw"
-      alt=""
-    />
-    <br>
-    
-        <button class="bu1" id="b6"> Google Search</button>
-        <button class="bu1" id="b7"> I'm Feeling lucky </button><br><br><br>
-        <div  style="padding-left: 450px;"><p style="display: inline-block; color: black; cursor:default ;">Google offered in: </p>
-            <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;" href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBE">हिन्दी</a>
-            <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;" href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=bn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBI">বাংলা</a>
-            <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;" href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=te&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBM">తెలుగు</a>
-            <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;" href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=mr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBQ">मराठी</a>
-            <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;" href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBU">தமிழ்</a>
-            <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;" href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=gu&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBY">ગુજરાતી</a>
-            <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;" href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=kn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBc">ಕನ್ನಡ</a>
-            <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;" href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=ml&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBg">മലയാളം</a>
-            <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;" href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=pa&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBk">ਪੰਜਾਬੀ</a>
+    <main>
+        <img id="img2" src="https://pngimg.com/d/google_PNG19624.png" alt="">
+        <div id="element-box">
+            <div id="search-box">
+                <span><button id="glass"> <i class="fa-sharp fa-solid fa-magnifying-glass"
+                            style="color: black;"></i></button></span>
+                <span><input type="text" name="" id="search" placeholder="Search Google or Type a URL"></span>
+                <span id="tool">
+                    <span id="mic"><button> <img
+                                src="data:image/png;base64,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"
+                                alt="" width="25px" height="25px"></button></span>
+                    <span id="camera"><button><img
+                                src="https://static-00.iconduck.com/assets.00/google-lens-icon-512x512-3vrxag23.png"
+                                alt="" width="25px" height="25px"></button></span>
+                </span>
+            </div>
         </div>
-    
+    </main>
 
-  </body>
+
+
+    <br>
+
+    <button class="bu1" id="b6"> Google Search</button>
+    <button class="bu1" id="b7"> I'm Feeling lucky </button><br><br><br>
+    <div style="padding-left: 450px;">
+        <p style="display: inline-block; color: black; cursor:default ;">Google offered in:</p>
+        <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;"
+            href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBE">हिन्दी</a>
+        <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;"
+            href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=bn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBI">বাংলা</a>
+        <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;"
+            href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=te&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBM">తెలుగు</a>
+        <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;"
+            href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=mr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBQ">मराठी</a>
+        <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;"
+            href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBU">தமிழ்</a>
+        <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;"
+            href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=gu&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBY">ગુજરાતી</a>
+        <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;"
+            href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=kn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBc">ಕನ್ನಡ</a>
+        <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;"
+            href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=ml&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBg">മലയാളം</a>
+        <a class="a1" style="color: black;padding-right: 3px;text-decoration: none;"
+            href="https://www.google.com/setprefs?sig=0_xu-3rVVbXQ5QQ6HID_k_ONp6QS8%3D&amp;hl=pa&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjotOLDrdb_AhXa0mEKHTRUC9QQ2ZgBCBk">ਪੰਜਾਬੀ</a>
+    </div>
+
+
+</body>
+
 </html>
