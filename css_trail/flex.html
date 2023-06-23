@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .main1{
+            width: 100%;
+            height: 700px; 
+            margin: 0%;
+            display: flex;
+            /* align-content: space-between; */
+            justify-content: space-between;
+             background-color: rgb(73, 153, 195); 
+             /* flex-wrap: wrap; */
+             /* flex-direction: column; */
+             /* justify-content: center; */
+             align-items: flex-start;   
+             /* flex-direction: row; */
+             /* align-content: center; */
+            
+             
+            
+        }
+        .main1 div{
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 50px;
+            /* align-content: flex-end; */
+            /* display: flex; */
+            /* align-items: center; */
+             }  
+        /* .main1 div:nth-child(3){
+            flex-basis: 100px;
+            
+        } */
+        div{
+            display: flex;
+            padding: 15px;
+            margin-left: 10px;
+            text-align: center;
+            border:2px solid black; 
+            /* align-items:end; */
+            /* width: 100px;*/
+            /* height: 30px;  */
+            /* align-content:flex-end; */
+            
+        }
+        .main1 div:nth-child(even){
+            /* display: flex;
+            flex-wrap: wrap; */
+            align-content: center;
+            /* order: -1; */
+            /* flex-grow: 0;
+            flex-shrink: 2;
+             */
+        }
+        /* .main1 div:nth-child(odd){
+            /* display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start; */
+            /* flex-grow: 2; */
+        /* }   */ 
+         
+
+    </style>
+</head>
+<body style="margin: 0%;">
+    <div class="main1">
+    <div id="d1" style="background-color: aqua;">item-1</div>
+    <div style="background-color: rgb(20, 144, 74);">item-2</div>
+    <div style="background-color: rgb(128, 171, 11);">item-3</div>
+    <div style="background-color: rgb(255, 200, 0);">item-4</div>
+    <div style="background-color: rgb(175, 93, 11);">item-5</div>
+    <!-- <div style="background-color: aqua;">item-1</div>
+    <div style="background-color: rgb(20, 144, 74);">item-2</div>
+    <div style="background-color: rgb(128, 171, 11);">item-3</div>
+    <div style="background-color: rgb(255, 200, 0);">item-4</div>
+    <div style="background-color: rgb(175, 93, 11);">item-5</div>
+    <div style="background-color: aqua;">item-1</div>
+    <div style="background-color: rgb(20, 144, 74);">item-2</div>
+    <div style="background-color: rgb(128, 171, 11);">item-3</div>
+    <div style="background-color: rgb(255, 200, 0);">item-4</div>
+    <div style="background-color: rgb(175, 93, 11);">item-5</div>
+    <div style="background-color: aqua;">item-1</div>
+    <div style="background-color: rgb(20, 144, 74);">item-2</div>
+    <div style="background-color: rgb(128, 171, 11);">item-3</div>
+    <div style="background-color: rgb(255, 200, 0);">item-4</div>
+    <div style="background-color: rgb(175, 93, 11);">item-5</div>  -->
+    </div>
+</body>
+</html>
