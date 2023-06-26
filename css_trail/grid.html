@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <Style>
+        #header{
+            background-color: aqua;
+            color: black;
+            text-align: center;
+            grid-area: header;
+            height: 120px;
+        }
+        #menu{
+            background-color: rgb(12, 162, 127);
+            color: black;
+            text-align: center;
+            grid-area: menu;
+            height: 500px;
+        }
+        #main{
+            background-color: rgb(22, 196, 83);
+            color: black;
+            text-align: center;
+            grid-area: main;
+            height: 500px;
+
+        }
+        #aside{
+            background-color: rgb(89, 178, 11);
+            color: black;
+            text-align: center;
+            grid-area: aside;
+            height: 500px;
+
+        }
+        #footer{
+            background-color: rgb(165, 193, 12);
+            color: black;
+            text-align: center;
+            grid-area: footer;
+            height: 180px;
+
+        }
+        #Grid_templet{
+            display: grid;
+            grid-template-areas:
+                 'header  header header header header header'
+                 'menu main main main main aside'
+                 'footer footer footer footer footer footer';
+                 grid-gap:16px;
+        }
+        @media(max-width:900px){
+            #Grid_templet{
+            display: grid;
+            grid-template-areas:
+                 'header  header header header header header'
+                 'menu menu menu menu menu menu '
+                 'main main main main main aside'
+                 'footer footer footer footer footer footer';
+                 grid-gap:16px;
+
+            }
+        }
+        @media(max-width:400px){
+            #Grid_templet{
+            display: grid;
+            grid-template-areas:
+                 'header  header header header header header'
+                 'menu menu menu menu menu menu '
+                 'main main main main main main'
+                 ' aside aside aside aside aside aside'
+                 'footer footer footer footer footer footer';
+                 grid-gap:16px;
+
+            }
+        }
+       
+    </Style>
+</head>
+<body style="margin: 0%">
+    <div id="Grid_templet">
+        <div id="header">Header</div>
+        <div id="menu">menu</div>
+        <div id="main">main</div>
+        <div id="aside">aside</div>
+        <div id="footer">footer</div>
+    </div>
+    
+</body>
+</html>

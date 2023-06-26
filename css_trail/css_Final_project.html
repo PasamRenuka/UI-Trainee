@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Final Project</title>
+    <script src="https://kit.fontawesome.com/c686a200b7.js" crossorigin="anonymous"></script>
+    <style>
+        header{
+             background-color: aqua;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             position: fixed;
+             width: 100%;
+             height: 77px;
+             background-color: white;
+   
+           padding: 0 28px;
+            box-sizing: border-box;
+           position: fixed;
+        }
+        #div1{
+            float: right;
+        }
+        #dropdown:hover{
+            cursor: pointer;
+            
+
+        }
+        #section1{
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            /* width: 100%;
+            height: 100%; */
+        }
+        /* #div2{
+            
+        } */
+        #section2{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+        }
+        #first{
+            background-color: #5acda6;
+        }
+        #second{
+            background-color: #91ac41;
+        }
+        #third{
+            background-color: #e4b476;
+        }
+        #fourth{
+            background-color: #f69dad;
+        }
+        .item{
+            width: 25%;
+            padding: 112px 48px;
+            text-align: center;
+            color: white;
+            box-sizing: border-box;
+        }
+        .item i{
+            font-size: 96px;
+            
+        }
+        .item i:hover{
+            font-size: 120px;
+        }
+        #dropdown{
+            color: black;
+           font-weight: 600;
+           font-size: 14px;
+           margin-right: 24px;
+           cursor: pointer;
+        }
+        #blocks{
+            color: black;
+           font-weight: 600;
+           font-size: 14px;
+           margin-right: 24px;
+           cursor: pointer;
+        }
+        #watch_vedio{
+            color: black;
+           font-weight: 600;
+           font-size: 14px;
+           margin-right: 24px;
+           cursor: pointer;
+        }
+        button{
+            font-size: 12px;
+            font-weight: 600;
+             color: white;
+             background-color: rgb(170, 210, 54);
+             padding: 9px 34px;
+             text-transform: uppercase;
+             border: 0;
+             border-radius: 4px;
+             margin-right: 16px;
+              cursor: pointer;
+        }
+        footer{
+            background-color: #232323;
+            color: white;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            padding: 30px 0px;
+        }
+        #section3{
+            width: 100%;
+            background-color: #f7eee2;
+            padding-top: 75px;
+            padding-bottom: 75px;
+            text-align: center;
+        }
+        #freshfood{
+            color: #91ac41;
+            font-size: 24px;
+            font-family: 'Caveat', cursive;
+            margin: 0;
+          margin-top: 35px;
+          text-align: center;
+
+        }
+        #radish{
+            font-size: 16px;
+            font-weight: 500;
+             margin: 0;
+            color: #8b8b99;
+            letter-spacing: 0.5px;
+             margin-bottom: 55px;
+        }
+        .store-item{
+            width: 25%;
+             text-align: center;
+            padding: 24px;
+        }
+        .camera{
+             display: inline-block;
+             background-color: #e3b375;
+             border-radius: 50%;
+             padding: 40px;
+             color: white;
+             transition: all 0.3s;
+             font-size: 60px;
+        }
+        #items2{
+            width: 100%;
+           max-width: 1140px;
+           display: flex;
+           justify-content: stretch;
+           margin: 0 auto;
+           text-align: center;
+        }
+        .store-item h3{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .store-item p{
+              font-size: 16px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+             color: #8b8b99;
+        }
+        h3{
+            display: block;
+              font-weight: bold;
+
+        }
+        #section4{
+            width: 100%;
+            padding-top: 75px;
+            padding-bottom: 75px;
+            text-align: center;
+        }
+        #heading1{
+            color: #91ac41;
+            font-size: 24px;
+            font-family: 'Caveat', cursive;
+             margin: 0;
+             margin-top: 35px;
+             text-align: center;
+        }
+        #p1{
+            max-width: 700px;
+            font-size: 16px;
+            font-weight: 500;
+             margin: 0 auto;
+            color: #8b8b99;
+            letter-spacing: 0.5px;
+            margin-bottom: 55px;
+        }
+        #data{
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+        .person{
+            width: 25%;
+            text-align: center;
+            background-color: #f5f6fb;
+            padding: 40px 30px;
+             margin: 16px;
+             border-top-left-radius: 45px;
+            border-bottom-left-radius: 45px;
+            border-bottom-right-radius: 45px;
+            transition: box-shadow 0.3s;
+        }
+        .person img{
+            width: 80px;
+           margin-bottom: 25px;
+           border-radius: 50%;
+        }
+        #message{
+            font-size: 14px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+        }
+    </style>
+</head>
+<body style="margin: 0%;font-family: 'poppins' , sans-serif;background-image:https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png">
+    <header>
+        <img src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg" alt="Image loading">
+        <div id="div1">
+            
+            <span id="dropdown">Demo Pages<i class="fas fa-caret-down"></i></span>
+            <span id="watch_vedio">Watch Video</span>
+            <span id="blocks">Blocks<i class="fas fa-caret-down"></i></span>
+            <span id="buynow"><button>Buy Now</button></span>
+        </div>
+    
+    </header>
+    
+    <main>
+        <section id="section1">
+            
+                <h1 style="font-size: 28px;
+                display: block;width: 100%;
+                max-width: 1100px;
+                font-size: 44px;
+                font-weight: 600;
+                letter-spacing: 8.8px;
+                line-height: 1.2;
+                text-align: center;margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                margin: 0;">Vegan Store Simple Website Template</h1>
+                <p style="box-sizing: border-box;
+                    width: 100%;
+                    max-width: 1100px;
+                    font-size: 14px;
+                    letter-spacing: 0.5px;
+                    font-weight: 400;
+                    color: #8b8b99;
+                    text-align: center;
+                    padding-top: 32px;
+                ">With nutrition, all the vital functions of the body are connected. It is the source of the development of tissues and cells, their constant renewal, the saturation of man with energy.</p>
+            
+        </section>
+
+        <section id="section2">
+            <div id="first" class="item">
+                <i class="fa fa-cut"></i>
+                <h3>Step 01.</h3>
+                <p>Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.</p>
+            </div>
+            <div id="second" class="item">
+                <i class="fa fa-paint-brush"></i>
+                <h3>Step 02.</h3>
+                <p>Fresh tomatoes are ideal for replenishing the loss of minerals. These vegetables contain a lot of acids that our body needs for full-fledged work.</p>
+            </div>
+            <div id="third" class="item">
+                <i class="fa fa-shopping-bag"></i>
+                <h3>Step 03.</h3>
+                <p>In the content of vitamin C, sweet peppers are superior to lemons and even black currants! The greatest amount of vitamin is contained around the stalk, that is, in the part of the product that is usually cut during cleaning.</p>
+            </div>
+            <div id="fourth" class="item">
+                <i class="far fa-smile"></i>
+                <h3>Step 04.</h3>
+                <p>If you sometimes eat hot chili peppers, this will help normalize cerebral circulation, ease the condition with bronchial asthma, cough, sore throat, flu.</p>
+            </div>
+        </section>
+
+        <section id="section3">
+            <p id="freshfood">Fresh Food</p>
+            <h3  style="font-size: 44px;
+            font-weight: 600;
+            margin: 0;
+            margin-bottom: 8px;
+            text-align: center;">Our Vegan Store!</h3>
+            <p id="radish">Radish contains a lot of fiber, pectin and mineral salts.</p>
+            <div id="items2">
+                <div class="store-item">
+                    <div class="camera"><i class="fa fa-camera"></i></div>
+                    <h3>Fresh Vegetables</h3>
+                    <p>Use for cooking several types of vegetable oil.</p>
+                </div>
+                <div class="store-item">
+                    <div class="camera"><i class="fa-rocket fa"></i></div>
+                    <h3>High Quality</h3>
+                    <p>This is the best source of essential fatty acids for the body.</p>
+                </div>
+                <div class="store-item">
+                    <div class="camera"><i class="fab fa-twitter"></i></div>
+                    <h3>Sale</h3>
+                    <p>It is very good, if in the kitchen there will always be several bottles with different oils.</p>
+                </div>
+                <div class="store-item">
+                    <div class="camera"><i class="fab fa-weixin"></i></div>
+                    <h3>Best Price</h3>
+                    <p>Remember that unrefined oils are not suitable for heat treatment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4">
+            <p id="heading1">Fresh Food</p>
+            <h3 
+            style="font-size: 44px;
+            font-weight: 600;
+            margin: 0;
+            margin-bottom: 8px;
+        ">Our Vegan Shop!</h3>
+            <p id="p1">According to experts, any habit can be formed in 21 days. The same statement applies to healthy eating.</p>
+
+            <div id="data">
+                <div class="person">
+                    <img 
+                    style="overflow-clip-margin: content-box;
+                    overflow: clip;" 
+                    src="https://mobirise.com/extensions/organicamp/assets/images/face5.jpg">
+                    <p class="message">Sales consultants are very polite. Many of the products have tried and are ready to prompt and recommend to customers. The staff shows that they completely share the philosophy of proper nutrition, if you can say so.</p>
+                    <h3 class="testimonial-by">VERONICA KING</h3>
+                    <p class="job-role">Cook</p>
+                </div>
+                <div class="person">
+                    <img
+                     style="overflow-clip-margin: content-box;
+                    overflow: clip;" 
+                     src="https://mobirise.com/extensions/organicamp/assets/images/face6.jpg">
+                    <p class="message">The assortment is very wide. From useful organic oils, cereals and teas to specific products for vegetarians, such as sausages and pies without meat.</p>
+                    <h3 class="testimonial-by">JIM CASH</h3>
+                    <p class="job-role">Seller</p>
+                </div>
+                <div class="person">
+                    <img
+                    style="overflow-clip-margin: content-box;
+                    overflow: clip;" 
+                     src="https://mobirise.com/extensions/organicamp/assets/images/face7.jpg">
+                    <p class="message">I want to say a huge thank you to the management of the store and all its employees, I'm not a vegetarian, it would seem that the store is not for me, but it's not so, any person who comes here will find something useful.</p>
+                    <h3 class="testimonial-by">PETER GOODMAN</h3>
+                    <p class="job-role">Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section5">
+            <div id="left-section">
+                <img src="https://mobirise.com/extensions/organicamp/assets/images/19.jpg" alt="Strawberry">
+            </div>
+            <div id="right-section">
+                <div id="text-wrapper">
+                    <h3>Follow Us</h3>
+                    <p>A wide range of products; many unusual and tasty products; courteous staff.</p>
+
+                    <input id="subscribe-email" placeholder="Your Email">
+                    <input id="subscribe-btn" type="submit" value="Subscribe">
+                </div>
+            </div>
+        </section>
+
+        <section id="section6">
+            <div id="stats-wrapper">
+                <div class="stats-item">
+                    <h3>7</h3>
+                    <p>Year of experiences</p>
+                </div>
+                <div class="stats-item">
+                    <h3>123k</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stats-item">
+                    <h3>72k</h3>
+                    <p>100% Satisfaction</p>
+                </div>
+                <div class="stats-item">
+                    <h3>13k</h3>
+                    <p>Detox Smoothies</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section7">
+            <div>
+                <h3>Vimeo Video</h3>
+                <div id="line-separator"></div>
+
+                <iframe frameborder="0" allowfullscreen="" src="https://player.vimeo.com/video/275412279"></iframe>
+            </div>
+        </section>
+
+        <section id="section8">
+            <div id="address-wrapper">
+                <div>
+                    <p class="green-heading">Contact Us</p>
+                    <h3 class="section-heading">Address Information</h3>
+                    <p class="section-description">Overeating is one of the most common causes of overweight and digestive problems.</p>
+
+                    <h4 class="address-heading">London Store</h4>
+                    <p class="address-lines">
+                        Roeterseiland Campus Building E<br>6th floor London<br>Monday to Friday : 9am to 8pm<br>examplemail.mail.com</p>
+
+                    <h4 class="address-heading">Berlin Store</h4>
+                    <p class="address-lines">
+                        Roeterseiland Campus Building E<br>6th floor London<br>Monday to Friday : 9am to 8pm<br>examplemail.mail.com</p>
+                </div>
+                <div>
+                    <p class="green-heading">Meet Our Team</p>
+                    <h3 class="section-heading">Get In Touch</h3>
+                    <p class="section-description">The task of proper nutrition - to remove from the diet harmful food and enrich it useful.</p>
+
+                    <form>
+                        <input class="input-box" type="text" name="name" placeholder="Name">
+                        <input class="input-box" type="text" name="phone" placeholder="Phone">
+                        <input class="input-box" type="text" name="subject" placeholder="Subject">
+                        <input class="input-box" type="email" name="email" placeholder="E-mail">
+                        <textarea class="input-box">Message</textarea>
+                        <input id="btn-submit" class="primary-button" type="submit" value="Submit Now">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>© Copyright 2018 Mobirise - All Rights Reserved</footer>
+    
+</body>
+</html>

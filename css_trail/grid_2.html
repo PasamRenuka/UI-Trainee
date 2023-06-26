@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_2</title>
+    <style>
+        img{
+            width: 200px;
+            height: 350px;
+            
+        }
+        
+        #Grid_container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-gap:16px;
+            justify-content: center;
+            
+        }
+        @media(max-width:900px){
+            #Grid_container{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            grid-gap:16px;
+            justify-content: center;
+        }
+
+        }
+        @media(max-width:400px){
+            #Grid_container{
+            display: grid;
+            grid-template-columns: auto auto  ;
+            grid-gap:16px;
+            justify-content: center;
+        }
+
+        }
+        p{
+            background-color: black;
+            color: white;
+        }
+        img:hover{
+            width: 250px;
+            height: 400px;
+            cursor: pointer;
+
+        }
+        #d2{
+            background-color: aqua;
+            height: 100px;
+            text-align: center;
+            /* margin-top: 50px; */
+            /* margin-bottom: 30px; */
+            position: fixed;
+            width: 100%;
+        }
+        /* h1{
+            
+        } */
+        button{
+            float: right;
+            background-color: skyblue;
+            color: white;
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 3px;
+            /* margin-bottom: 25px; */
+        }
+        
+        
+    </style>
+</head>
+<body style="margin: 0%;">
+    <div id="d2">
+        <h1>Movies</h1>
+        
+        <button>Signin</button>
+    </div>
+    <div id="Grid_container">
+        <img id="img1" src="https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png" title="do you want download">
+        <img id="img2" src="https://cdn.shopify.com/s/files/1/0969/9128/products/Dora_The_Explorer_And_The_Lost_City_Of_Gold_-_Hollywood_English_Movie_Poster_1_66c87e56-24a2-4135-b709-a6b98a7f7bce.jpg?v=1577693664" title="do you want download">
+        <img id="img3" src="https://e1.pxfuel.com/desktop-wallpaper/362/443/desktop-wallpaper-varun-tej-valmiki-movie-first-look-ultra-posters-telugu-movie-poster-thumbnail.jpg" alt="" title="do you want download">
+        <img id="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhLEvUPEoWt0HfJDfr8P49Omg_kLlpNkiNUDBo6-5JB7vl0URr5hc7tBLqzauWh2R3VxI&usqp=CAU" alt="" title="do you want download">
+        <img id="img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlRsWgDv8tob-P0O_h3z5KF-BRoX9m_Eu7dUlimydMsiNmr6O5rgkgLsGVL__uuluiJ4s&usqp=CAU" alt="" title="do you want download">
+        <img id="img6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDvL23NQbiUUk959gcUJ8EkOm2URPbREgmG-5UTXvNGDEmQae253PRrgheYMro4uA_6o&usqp=CAU" alt="" title="do you want download">
+        <img id="img7" src="https://moviegalleri.net/wp-content/gallery/telugu-year-2022/ET-Movie-New-Year-2022-Wishes-Poster.jpg" alt="" title="do you want download">
+        <img id="img8" src="https://files.prokerala.com/movies/pics/800/nagarjuna-and-rgv-s-officer-second-teaser-will-be-out-tomorrow-87625.jpg" alt="" title="do you want download">
+        <img id="img9" src="https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png" alt="" title="do you want download">
+        <img id="img10" src="https://cdn.shopify.com/s/files/1/0969/9128/products/Dora_The_Explorer_And_The_Lost_City_Of_Gold_-_Hollywood_English_Movie_Poster_1_66c87e56-24a2-4135-b709-a6b98a7f7bce.jpg?v=1577693664" alt="" title="do you want download">
+        <img id="img11" src="https://e1.pxfuel.com/desktop-wallpaper/362/443/desktop-wallpaper-varun-tej-valmiki-movie-first-look-ultra-posters-telugu-movie-poster-thumbnail.jpg" alt="" title="do you want download">
+        <img id="img12" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhLEvUPEoWt0HfJDfr8P49Omg_kLlpNkiNUDBo6-5JB7vl0URr5hc7tBLqzauWh2R3VxI&usqp=CAU" alt="" title="do you want download">
+        <img id="img13" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlRsWgDv8tob-P0O_h3z5KF-BRoX9m_Eu7dUlimydMsiNmr6O5rgkgLsGVL__uuluiJ4s&usqp=CAU" alt="" title="do you want download">
+        <img id="img14" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDvL23NQbiUUk959gcUJ8EkOm2URPbREgmG-5UTXvNGDEmQae253PRrgheYMro4uA_6o&usqp=CAU" alt="" title="do you want download">
+        <img id="img15" src="https://moviegalleri.net/wp-content/gallery/telugu-year-2022/ET-Movie-New-Year-2022-Wishes-Poster.jpg" alt="" title="do you want download">
+        <img id="img16" src="https://files.prokerala.com/movies/pics/800/nagarjuna-and-rgv-s-officer-second-teaser-will-be-out-tomorrow-87625.jpg" alt="" title="do you want download">
+        <img id="img17" src="https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png" alt="" title="do you want download">
+        <img id="img18" src="https://cdn.shopify.com/s/files/1/0969/9128/products/Dora_The_Explorer_And_The_Lost_City_Of_Gold_-_Hollywood_English_Movie_Poster_1_66c87e56-24a2-4135-b709-a6b98a7f7bce.jpg?v=1577693664" alt="" title="do you want download">
+        <img id="img19" src="https://e1.pxfuel.com/desktop-wallpaper/362/443/desktop-wallpaper-varun-tej-valmiki-movie-first-look-ultra-posters-telugu-movie-poster-thumbnail.jpg" alt="" title="do you want download">
+        <img id="img20" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhLEvUPEoWt0HfJDfr8P49Omg_kLlpNkiNUDBo6-5JB7vl0URr5hc7tBLqzauWh2R3VxI&usqp=CAU" alt="" title="do you want download">
+        <img id="img21" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlRsWgDv8tob-P0O_h3z5KF-BRoX9m_Eu7dUlimydMsiNmr6O5rgkgLsGVL__uuluiJ4s&usqp=CAU" alt="" title="do you want download">
+        <img id="img22" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDvL23NQbiUUk959gcUJ8EkOm2URPbREgmG-5UTXvNGDEmQae253PRrgheYMro4uA_6o&usqp=CAU" alt="" title="do you want download">
+        <img id="img23" src="https://moviegalleri.net/wp-content/gallery/telugu-year-2022/ET-Movie-New-Year-2022-Wishes-Poster.jpg" alt="" title="do you want download">
+        <img id="img24" src="https://files.prokerala.com/movies/pics/800/nagarjuna-and-rgv-s-officer-second-teaser-will-be-out-tomorrow-87625.jpg" alt="" title="do you want download">
+    </div>
+    
+    
+</body>
+</html>
