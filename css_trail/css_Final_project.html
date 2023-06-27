@@ -5,11 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS - Final Project</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/c686a200b7.js" crossorigin="anonymous"></script>
+    
     <style>
-        /* body {
+        body {
             font-family: 'Poppins', sans-serif;
-        } */
+            margin: 0;
+        }
+
+        section {
+            display: block;
+        }
 
         header {
             display: flex;
@@ -19,7 +26,6 @@
             width: 100%;
             height: 77px;
             background-color: white;
-
             padding: 0 28px;
             box-sizing: border-box;
             position: fixed;
@@ -61,9 +67,6 @@
 
         #div5:hover #menu {
             display: block;
-
-            /* float: left; */
-
         }
 
 
@@ -80,13 +83,9 @@
 
         }
 
-        /* #div2{
-            
-        } */
         #section2 {
             width: 100%;
             display: flex;
-            /* flex-direction: row; */
             justify-content: stretch;
         }
 
@@ -120,9 +119,10 @@
             line-height: 1.6;
             /* margin-top: 0; */
         }
-        .item h3{
+
+        .item h3 {
             font-weight: 600;
-    font-size: 25px;
+            font-size: 25px;
         }
 
         .item i {
@@ -225,7 +225,12 @@
             font-size: 60px;
             /* width: 140; */
             height: 60px;
+            
         }
+        .camera i {
+    font-size: 60px;
+    
+}
 
         .store-item:hover .camera {
             transform: scale(1.1, 1.1);
@@ -323,7 +328,7 @@
             /* width: 249px;
             height: 147px; */
         }
-        
+
 
         .person h3 {
             text-transform: uppercase;
@@ -694,8 +699,7 @@
     </style>
 </head>
 
-<body
-    style="margin: 0%;font-family: 'poppins' , sans-serif;background-image:https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png">
+<body>
     <header>
         <img style="width: 40px;" src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg"
             alt="Image loading" />
@@ -743,6 +747,7 @@
             color: #8b8b99;
             text-align: center;
             padding-top: 32px;
+            font-family: 'Poppins', sans-serif;
           ">
                 With nutrition, all the vital functions of the body are connected. It
                 is the source of the development of tissues and cells, their constant
@@ -807,7 +812,7 @@
             </p>
             <div id="items2">
                 <div class="store-item">
-                    <div class="camera"><i class="fa fa-camera"></i></div>
+                    <div class="camera"><i  class="fa fa-camera"></i></div>
                     <h3>Fresh Vegetables</h3>
                     <p>Use for cooking several types of vegetable oil.</p>
                 </div>
