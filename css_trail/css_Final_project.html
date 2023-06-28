@@ -7,7 +7,7 @@
     <title>CSS - Final Project</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/c686a200b7.js" crossorigin="anonymous"></script>
-    
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -37,6 +37,7 @@
 
         #div1 {
             float: right;
+            /* font-weight: 600; */
         }
 
         #menu {
@@ -55,6 +56,12 @@
             border-bottom: 1px solid #ccc;
             padding: 4px;
             cursor: pointer;
+        }
+
+        #blocks{
+            font-weight: 600;
+            font-size: medium;
+            font-weight: bold;
         }
 
         #menu a:last-of-type {
@@ -137,7 +144,7 @@
 
         #dropdown {
             color: black;
-            font-weight: 600;
+            font-weight: 900;
             font-size: 14px;
             margin-right: 24px;
             cursor: pointer;
@@ -223,14 +230,16 @@
             color: white;
             transition: all 0.3s;
             font-size: 60px;
-            /* width: 140; */
-            height: 60px;
-            
+            width: 75px;
+            height: 75px;
+
         }
+
         .camera i {
-    font-size: 60px;
-    
-}
+            font-size: 60px;
+            /* padding */
+
+        }
 
         .store-item:hover .camera {
             transform: scale(1.1, 1.1);
@@ -743,7 +752,7 @@
             max-width: 1100px;
             font-size: 15px;
             letter-spacing: 0.5px;
-            font-weight: 400;
+            font-weight: 100; 
             color: #8b8b99;
             text-align: center;
             padding-top: 32px;
@@ -812,7 +821,7 @@
             </p>
             <div id="items2">
                 <div class="store-item">
-                    <div class="camera"><i  class="fa fa-camera"></i></div>
+                    <div class="camera"><i class="fa fa-camera"></i></div>
                     <h3>Fresh Vegetables</h3>
                     <p>Use for cooking several types of vegetable oil.</p>
                 </div>
