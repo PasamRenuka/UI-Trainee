@@ -17,7 +17,7 @@ for(i in customers_data ){
 }
 
 
-
+person?.name?.firstName
 
 //2-program:
 
