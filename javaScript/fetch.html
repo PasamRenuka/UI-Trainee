@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <style>
+        body{
+            background-color: rgb(186, 184, 184);
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-left:6%;
+            /* margin-right: 10%; */
+            
+        }
+        section >div{
+            border: 1px solid rgb(231, 46, 135);
+            width: 300px;
+            height: 400px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            color: rgb(207, 48, 125);
+        }
+        section > div > img{
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+     <section id="sec"></section>
+     <script>
+        // var sec= document.getElementById('section')
+
+       
+        fetch('https://fakestoreapi.com/products/').then(res => res.json())
+        .then(data => {
+            for(i in data){
+                var div1 = document.createElement('div');
+                var img1 = document.createElement('img');
+                img1.src=data[i].image
+                div1.appendChild(img1);
+
+                var para = document.createElement('p');
+                var title = document.createTextNode(data[i].title);
+                para.appendChild(title);
+                div1.appendChild(para);
+
+                var price1 = document.createElement("h4");
+                var price2 = document.createTextNode(data[i].price);
+                price1.id=i;
+                price1.appendChild(price2)
+                div1.appendChild(price1)
+                
+
+                var rating1 = document.createElement("h3");
+                var rating2 = document.createTextNode(data[i].rating.rate);
+                rating1.appendChild(rating2);
+                div1.appendChild(rating1)
+
+                
+                
+                var del = document.createElement('button');
+                del.innerHTML = "Delete";
+                div1.appendChild(del);
+                del.style.cssText="background-color:rgb(231, 46, 135);border: 1px solid rgb(231, 46, 135);border-radius: 10px;"
+                let unique_value='https://fakestoreapi.com/products/' + i;
+               
+                del.addEventListener('click', function (event) {
+                var value_ = event.target.closest('div');
+                value_.remove()
+                fetch(unique_value,{method:"DELETE"})
+
+               })
+
+               var inp = document.createElement('input');
+               inp.style.cssText="margin-top:5px;";
+               inp.placeholder=" Enter Update value"
+               div1.appendChild(inp);
+
+               var upd = document.createElement('button');
+                upd.innerHTML = "Update";
+                div1.appendChild(upd);
+                upd.style.cssText="background-color:rgb(231, 46, 135);border: 1px solid rgb(231, 46, 135);border-radius: 10px;margin-top:5px;"
+                var unique_id=i;
+                let udate_price=data[unique_id].rating.rate;
+                
+                upd.addEventListener('click', function () {
+                    var inp2=document.getElementsByTagName('input');
+                    
+                    var rate1 = document.createElement("h4");
+                    rate1.innerHTML=inp2.value;
+                    console.log(rate1);
+                    //  var original=document.
+
+                    
+                })
+                sec.appendChild(div1)
+            }
+
+        })
+     </script>
+</body>
+</html>
