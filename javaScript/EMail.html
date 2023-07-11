@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <script src="https://kit.fontawesome.com/cf602690d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .Gimage {
+            display: inline-block;
+        }
+
+        #search_bar {
+            display: inline-block;
+            width: 70%;
+            height: 35px;
+            align-items: center;
+            position: relative;
+
+        }
+
+        #search {
+            width: 60%;
+            height: 35px;
+            /* border: none; */
+            border-color: rgb(123, 206, 206);
+            background-color: #d1dbea;
+            padding-left: 10px;
+            /* rgb(209, 228, 233); */
+            outline: none;
+            border-radius: 20px;
+            display: inline-block;
+            position: absolute;
+            left: 100px;
+
+        }
+
+        #Compose {
+            padding: 15px;
+            border: 2px solid rgb(123, 206, 206);
+            background-color: #d1dbea;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 70px;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            font-size: 15px;
+
+        }
+
+        #Post_Todo_User {
+            display: inline-block;
+
+        }
+
+        #P-table {
+            display: none;
+        }
+
+        #T-table {
+            display: none;
+        }
+
+        #U-table {
+            display: none;
+        }
+
+        .btn {
+            width: 200px;
+            padding: 10px;
+            border-color: rgb(123, 206, 206);
+            background-color: #d1dbea;
+            border-radius: 5px;
+            font-weight: 10px;
+            font-size: 20px;
+            margin-left: 5px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr:hover {
+            background-color: white
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #d1dbea;
+        }
+
+        th,
+        tr,
+        td {
+            border: 2px solid rgb(123, 206, 206);
+            border-collapse: collapse;
+        }
+    
+
+    
+
+        .btn2 {
+            width: 250px;
+            padding: 10px;
+            margin-top: 15px;
+            margin-left: 20px;
+            border: none;
+            background-color: rgb(210, 221, 230);
+            font-size: 18px;
+            text-align: start;
+
+        }
+
+        .material-symbols-outlined {
+            padding-right: 10px;
+        }
+
+        .int {
+            border: 2px solid rgb(123, 206, 206);
+            padding: 10px;
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 90%;
+        }
+        td > input{
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(210, 221, 230);margin: 0px;">
+    <header style="padding: 10px;background-color: rgb(210, 221, 230);border-bottom: 2px solid rgb(123, 206, 206);">
+        <img class="Gimage" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"
+            srcset="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png 1x, https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r5.png 2x "
+            alt="" aria-hidden="true" role="presentation" style="width:109px;height:40px">
+        <div id="search_bar">
+            <input type="text" name="" id="search" placeholder="Search Google or Type a URL">
+            <!-- <div>  <i
+            class="fa-sharp fa-solid fa-magnifying-glass"
+            style="color: #00040D;"
+          ></i></div> -->
+            <div style="position: relative;"><img src="https://static.thenounproject.com/png/4775351-200.png" alt=""
+                    style="width: 35px;position: absolute;left: 660px;top: 2px;"></div>
+
+        </div>
+        <div style="position: relative;display: inline-block;left: 230px;">
+            <div style="position: relative;display: inline-block;">
+                <button
+                    style="width: 100px;display: inline-block;position: absolute;bottom: 3px;right: 380px;text-align: center;background-color: transparent;border: none;border-radius: 5px;"><img
+                        src="https://www.nicepng.com/png/detail/106-1061638_red-glossy-green-button-png-icon.png" alt=""
+                        style="width: 20px;">Active</button>
+            </div>
+            <div style="position: relative;display: inline-block;">
+                <button
+                    style="position: absolute;right: 300px;bottom: 0.5px;border: none;background-color: transparent;border-radius: 5px;"><img
+                        src="https://static-00.iconduck.com/assets.00/question-mark-circled-icon-2048x2048-62dy4v7w.png"
+                        alt="" style="width: 30px;"></button>
+            </div>
+            <div style="position: relative;display: inline-block;right: 270px;bottom: 1px;">
+                <img src="https://www.freeiconspng.com/thumbs/settings-icon/settings-icon-13.png" alt=""
+                    style="width: 30px;">
+            </div>
+            <div style="position: relative;display: inline-block;right: 230px;bottom: 1px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/17/17704.png" alt="" style="width: 30px;">
+            </div>
+            <div style="position: relative;display: inline-block;right: 200px;bottom: 12px;">
+                <button
+                    style="background-color: #d1dbea; display: inline-block;width: 150px;padding: 10px;border-color: rgb(123, 206, 206);border-radius: 10px;">Gmail</button>
+            </div>
+        </div>
+    </header>
+
+    <div style="display: flex;width: 100vw;">
+        <div
+            style="position: relative;display: inline-block;width: 300px;border-right: 2px solid rgb(123, 206, 206);height: 100vh;width: 20%;">
+            <button id="Compose"><span class="material-symbols-outlined" style="text-align: center;">
+                edit
+                </span>Compose</button><br>
+            <button class="btn2"><span class="material-symbols-outlined">
+                    all_inbox
+                </span>Inbox</button><br>
+            <button class="btn2"><span class="material-symbols-outlined">
+                    star
+                </span>Starred</button><br>
+            <button class="btn2"> <span class="material-symbols-outlined">
+                    schedule
+                </span>Snoozed</button><br>
+            <button class="btn2"><span class="material-symbols-outlined">
+                    send
+                </span>Sent</button><br>
+            <button class="btn2"><span class="material-symbols-outlined">
+                    draft
+                </span>Draft</button><br>
+            <button class="btn2"><span class="material-symbols-outlined">
+                    expand_more
+                </span>More</button>
+
+        </div>
+        <div id="Post_Todo_User" style="width: 80%;margin-top: 10px;">
+            <button id="Posts" class="btn">Posts</button>
+            <button id="Todos" class="btn">Todos</button>
+            <button id="User" class="btn">Users</button>
+
+
+            <table id="U-table">
+                <tr>
+                    <th style="width: 25px;">Id</th>
+                    <th style="width: 281px;">Title</th>
+                    <th style="width: 675px;">Company Name</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+            <table id="T-table">
+                <tr>
+                    <th style="width: 25px;">Id</th>
+                    <th style="width: 281px;">Title</th>
+                    <th style="width: 675px;">Completed</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+            <table id="P-table">
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Body</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+
+        </div>
+        <div style="background-color: rgb(210, 221, 230);border: 2px solid rgb(123, 206, 206); width: 400px;height: 300px;position: absolute;bottom: 0;right: 0;display: none;"
+            id="displ">
+            <!-- <input class="int" id="in1" type="text" placeholder="Enter User Id..."><br> -->
+            <input class="int" id="in2" type="text" placeholder="Enter Id..."><br>
+            <input class="int" id="in3" type="text" placeholder="Enter Title..."><br>
+            <input class="int" id="in4" type="text" placeholder="Enter Some Description..."><br>
+            <button
+                style="width: 100px;padding: 10px;margin-top: 25px; margin-left: 150px;border: 2px solid rgb(123, 206, 206);background-color: rgb(210, 221, 230);border-radius: 5px;"
+                id="post1">Post</button>
+                <button
+                style="width: 100px;padding: 10px;margin-top: 25px; margin-left: 150px;border: 2px solid rgb(123, 206, 206);background-color: rgb(210, 221, 230);border-radius: 5px;"
+                id="canc">Cancel</button>
+        </div>
+    </div>
+    <Script>
+        // var total_div=document.getElementById('Post_Todo_User')
+        var Posts_2 = document.getElementById('Posts');
+        var P_table = document.getElementById("P-table");
+        Posts_2.addEventListener('click', function () {
+            document.getElementById("P-table").style.display = "block";
+            document.getElementById("T-table").style.display = "none";
+            document.getElementById("U-table").style.display = "none";
+            fetch("https://jsonplaceholder.typicode.com/posts")
+                .then((res) => res.json())
+                .then((data) => {
+                    var hid = document.createElement("th")
+                    var hnode = document.createTextNode("ID")
+                    for (i in data) {
+                        let x = "https://jsonplaceholder.typicode.com/posts/" + i;
+                        let y = i;
+                        var trow = document.createElement("tr")
+                        var tid = document.createElement("td")
+                        tid.id = "tid" + i
+                        var node = document.createTextNode(data[i].id)
+                        tid.appendChild(node)
+                        var input_id = document.createElement("input")
+                        tid.appendChild(input_id);
+                        input_id.id = "id" + i
+
+                        trow.appendChild(tid)
+                        var tTitle = document.createElement("td")
+                        tTitle.id = "tTitle" + i
+                        var node = document.createTextNode(data[i].title)
+                        tTitle.appendChild(node)
+                        var input_title = document.createElement("input")
+                        input_title.id = "title" + i
+                        tTitle.appendChild(input_title);
+                        trow.appendChild(tTitle)
+
+                        var tBody = document.createElement("td")
+                        tBody.id = "tBody" + i
+                        var node = document.createTextNode(data[i].body)
+                        tBody.appendChild(node)
+                        var input_body = document.createElement("input")
+                        input_body.id = "Body" + i
+                        tBody.appendChild(input_body);
+                        trow.appendChild(tBody)
+
+                        var tBody = document.createElement("td")
+                        var updateBtn = document.createElement("button")
+                        // updateBtn.id="up";
+                        // document.getElementById('up').style.cssText="border-color: rgb(123, 206, 206);background-color: #d1dbea; border-radius: 5px"
+                        updateBtn.textContent = "Update"
+                        tBody.appendChild(updateBtn)
+                        trow.appendChild(tBody)
+
+
+                        updateBtn.addEventListener('click', function () {
+                            document.getElementById("id" + y).style.display = "block"
+                            document.getElementById("title" + y).style.display = "block"
+                            document.getElementById("Body" + y).style.display = "block"
+                            document.getElementById("edit"+ y).style.display="block"
+                        })
+                        var editbtn = document.createElement("Button");
+                        editbtn.textContent = "Edit";
+                        tBody.appendChild(editbtn)
+                        trow.appendChild(tBody);
+                        editbtn.id = "edit" + i;
+                        editbtn.style.display = "none"
+                        editbtn.addEventListener("click", function (e) {
+                            var new_id = document.getElementById("id" + y);
+                            var new_title = document.getElementById("title" + y);
+                            var new_body = document.getElementById("Body" + y);
+                            var old_id = document.getElementById("tid" + y)
+                            var old_title = document.getElementById("tTitle" + y)
+                            var old_body = document.getElementById("tBody" + y)
+                            old_id.innerHTML = new_id.value
+                            old_title.innerHTML = new_title.value
+                            old_body.innerHTML = new_body.value
+                            fetch(x, {
+                                method: 'PUT',
+                                headers: {
+                                    'Content-type': 'application/json; charset=UTF-8',
+                                },
+                                body: JSON.stringify({
+                                    id: new_id.value,
+                                    title: new_title.value,
+                                    body: new_body.value,
+
+                                })
+
+                            })
+                                .then((response) => response.json())
+                                .then((json) => console.log(json));
+                        })
+
+
+                        var tBody = document.createElement("td")
+                        var delBtn = document.createElement("Button");
+                        delBtn.textContent = "Delete";
+                        tBody.appendChild(delBtn)
+                        trow.appendChild(tBody);
+                        delBtn.id = "del" + i;
+
+                        delBtn.addEventListener("click", function (event) {
+                            var value_ = event.target.closest('tr');
+                            value_.remove()
+                            fetch(x, { method: "DELETE" })
+                                .then((Response) => {
+                                    console.log(Response);
+                                    if (Response.status == 200) {
+                                        var value_ = event.target.closest("tr");
+                                        value_.remove();
+                                    }
+                                    console.log();
+                                })
+                                .then((error) => {
+                                    console.log(error);
+                                });
+                        });
+                        P_table.appendChild(trow)
+
+                    }
+                })
+        })
+        // total_div.appendChild(P_table)
+
+        var T_table = document.getElementById("T-table")
+        var todoBtn = document.getElementById("Todos")
+        todoBtn.addEventListener('click', function () {
+            document.getElementById("T-table").style.display = "block";
+            document.getElementById("P-table").style.display = "none";
+            document.getElementById("U-table").style.display = "none";
+            fetch("https://jsonplaceholder.typicode.com/todos")
+                .then((res) => res.json())
+                .then((data) => {
+                    var hid = document.createElement("th")
+                    var hnode = document.createTextNode("ID")
+                    for (i in data) {
+                        let x = "https://jsonplaceholder.typicode.com/todos/" + i;
+                        let y = i;
+                        var trow = document.createElement("tr")
+                        var tid = document.createElement("td")
+                        tid.id = "tid" + i
+                        var node = document.createTextNode(data[i].id)
+                        tid.appendChild(node)
+                        var input_id = document.createElement("input")
+                        tid.appendChild(input_id);
+                        input_id.id = "id" + i
+
+                        trow.appendChild(tid)
+                        var tTitle = document.createElement("td")
+                        tTitle.id = "tTitle" + i
+                        var node = document.createTextNode(data[i].title)
+                        tTitle.appendChild(node)
+                        var input_title = document.createElement("input")
+                        input_title.id = "title" + i
+                        tTitle.appendChild(input_title);
+                        trow.appendChild(tTitle)
+
+                        var tBody = document.createElement("td")
+                        tBody.id = "tBody" + i
+                        var node = document.createTextNode(data[i].completed)
+                        tBody.appendChild(node)
+                        var input_body = document.createElement("input")
+                        input_body.id = "Body" + i
+                        tBody.appendChild(input_body);
+                        trow.appendChild(tBody)
+
+                        var tBody = document.createElement("td")
+                        var updateBtn = document.createElement("button")
+                        updateBtn.textContent = "Update"
+                        tBody.appendChild(updateBtn)
+                        trow.appendChild(tBody)
+
+
+                        updateBtn.addEventListener('click', function () {
+                            document.getElementById("id" + y).style.display = "block"
+                            document.getElementById("title" + y).style.display = "block"
+                            document.getElementById("Body" + y).style.display = "block"
+                            document.getElementById("edit"+ y).style.display="block"
+                        })
+                        var editbtn = document.createElement("Button");
+                        editbtn.textContent = "Edit";
+                        tBody.appendChild(editbtn)
+                        trow.appendChild(tBody);
+                        editbtn.id = "edit" + i;
+                        editbtn.style.display = "none"
+                        editbtn.addEventListener("click", function (e) {
+                            var new_id = document.getElementById("id" + y);
+                            var new_title = document.getElementById("title" + y);
+                            var new_body = document.getElementById("Body" + y);
+                            var old_id = document.getElementById("tid" + y)
+                            var old_title = document.getElementById("tTitle" + y)
+                            var old_body = document.getElementById("tBody" + y)
+                            old_id.innerHTML = new_id.value
+                            old_title.innerHTML = new_title.value
+                            old_body.innerHTML = new_body.value
+                            fetch(x, {
+                                method: 'PUT',
+                                headers: {
+                                    'Content-type': 'application/json; charset=UTF-8',
+                                },
+                                body: JSON.stringify({
+                                    id: new_id.value,
+                                    title: new_title.value,
+                                    body: new_body.value,
+
+                                })
+
+                            })
+                                .then((response) => response.json())
+                                .then((json) => console.log(json));
+                        })
+
+
+                        var tBody = document.createElement("td")
+                        var delBtn = document.createElement("Button");
+                        delBtn.textContent = "Delete";
+                        tBody.appendChild(delBtn)
+                        trow.appendChild(tBody);
+                        delBtn.id = "del" + i;
+
+                        delBtn.addEventListener("click", function (event) {
+                            var value_ = event.target.closest('tr');
+                            value_.remove()
+                            fetch(x, { method: "DELETE" })
+                                .then((Response) => {
+                                    console.log(Response);
+                                    if (Response.status == 200) {
+                                        var value_ = event.target.closest("tr");
+                                        value_.remove();
+                                    }
+                                    console.log();
+                                })
+                                .then((error) => {
+                                    console.log(error);
+                                });
+                        });
+                        T_table.appendChild(trow)
+                    }
+                })
+        })
+
+
+        var U_table = document.getElementById("U-table")
+        var Users_2 = document.getElementById('User');
+
+
+        Users_2.addEventListener('click', function () {
+            document.getElementById("U-table").style.display = "block";
+            document.getElementById("T-table").style.display = "none";
+            document.getElementById("P-table").style.display = "none";
+            fetch("https://jsonplaceholder.typicode.com/users")
+                .then((res) => res.json())
+                .then((data) => {
+                    var hid = document.createElement("th")
+                    var hnode = document.createTextNode("ID")
+                    for (i in data) {
+                        let x = "ttps://jsonplaceholder.typicode.com/users/" + i;
+                        let y = i;
+                        var trow = document.createElement("tr")
+                        var tid = document.createElement("td")
+                        tid.id = "tid" + i
+                        var node = document.createTextNode(data[i].id)
+                        tid.appendChild(node)
+                        var input_id = document.createElement("input")
+                        tid.appendChild(input_id);
+                        input_id.id = "id" + i
+
+                        trow.appendChild(tid)
+                        var tTitle = document.createElement("td")
+                        tTitle.id = "tTitle" + i
+                        var node = document.createTextNode(data[i].name)
+                        tTitle.appendChild(node)
+                        var input_title = document.createElement("input")
+                        input_title.id = "title" + i
+                        tTitle.appendChild(input_title);
+                        trow.appendChild(tTitle)
+                        // table.appendChild(trow)
+                        // Post_Todo_User_2.appendChild(table)
+                        var tBody = document.createElement("td")
+                        tBody.id = "tBody" + i
+                        var node = document.createTextNode(data[i].company.name)
+                        tBody.appendChild(node)
+                        var input_body = document.createElement("input")
+                        input_body.id = "Body" + i
+                        tBody.appendChild(input_body);
+                        trow.appendChild(tBody)
+
+                        var tBody = document.createElement("td")
+                        var updateBtn = document.createElement("button")
+                        updateBtn.textContent = "Update"
+                        tBody.appendChild(updateBtn)
+                        trow.appendChild(tBody)
+
+
+                        updateBtn.addEventListener('click', function () {
+                            document.getElementById("id" + y).style.display = "block"
+                            document.getElementById("title" + y).style.display = "block"
+                            document.getElementById("Body" + y).style.display = "block"
+                            document.getElementById("edit"+ y).style.display="block"
+                        })
+                        var editbtn = document.createElement("Button");
+                        editbtn.textContent = "Edit";
+                        tBody.appendChild(editbtn)
+                        trow.appendChild(tBody);
+                        editbtn.id = "edit" + i;
+                        editbtn.style.display = "none"
+                        editbtn.addEventListener("click", function (e) {
+                            var new_id = document.getElementById("id" + y);
+                            var new_title = document.getElementById("title" + y);
+                            var new_body = document.getElementById("Body" + y);
+                            var old_id = document.getElementById("tid" + y)
+                            var old_title = document.getElementById("tTitle" + y)
+                            var old_body = document.getElementById("tBody" + y)
+                            old_id.innerHTML = new_id.value
+                            old_title.innerHTML = new_title.value
+                            old_body.innerHTML = new_body.value
+                            fetch(x, {
+                                method: 'PUT',
+                                headers: {
+                                    'Content-type': 'application/json; charset=UTF-8',
+                                },
+                                body: JSON.stringify({
+                                    id: new_id.value,
+                                    title: new_title.value,
+                                    body: new_body.value,
+
+                                })
+
+                            })
+                                .then((response) => response.json())
+                                .then((json) => console.log(json));
+                        })
+
+
+                        var tBody = document.createElement("td")
+                        var delBtn = document.createElement("Button");
+                        delBtn.textContent = "Delete";
+                        tBody.appendChild(delBtn)
+                        trow.appendChild(tBody);
+                        delBtn.id = "del" + i;
+
+                        delBtn.addEventListener("click", function (event) {
+                            var value_ = event.target.closest('tr');
+                            value_.remove()
+                            fetch(x, { method: "DELETE" })
+                                .then((Response) => {
+                                    console.log(Response);
+                                    if (Response.status == 200) {
+                                        var value_ = event.target.closest("tr");
+                                        value_.remove();
+                                    }
+                                    console.log();
+                                })
+                                .then((error) => {
+                                    console.log(error);
+                                });
+                        });
+                        U_table.appendChild(trow)
+                    }
+                })
+        })
+
+
+
+        var post = document.getElementById('post1');
+        // var int1 = document.getElementById('in1');
+        var int2 = document.getElementById('in2');
+        var int3 = document.getElementById('in3');
+        var int4 = document.getElementById('in4');
+        let v = fetch('https://jsonplaceholder.typicode.com/posts/');
+        post.addEventListener('click', function () {
+            alert("successfully Added")
+            // v.append(int2.value,int3.value,int4.value)
+            // fetch('https://jsonplaceholder.typicode.com/posts/',
+            //     {
+            //         method: "POST",
+            //         headers: {
+            //             'Content-Type': 'application/json; charset=UTF-8',
+            //         },
+            //         body: JSON.stringify({
+            //             id: int2.value,
+            //             title: int3.value,
+            //             body: int4.value,
+            //         })
+            //     })
+
+
+        })
+        var com = document.getElementById("Compose");
+        com.addEventListener('click', function () {
+            document.getElementById('displ').style.display = "block";
+        })
+        var can=document.getElementById('canc');
+        can.addEventListener('click',function(){
+            document.getElementById('displ').style.display = "none";
+            
+        })
+
+
+    </Script>
+</body>
+
+</html>
