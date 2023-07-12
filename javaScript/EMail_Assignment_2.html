@@ -107,9 +107,9 @@
             border: 2px solid rgb(123, 206, 206);
             border-collapse: collapse;
         }
-    
 
-    
+
+
 
         .btn2 {
             width: 250px;
@@ -134,7 +134,8 @@
             margin-left: 10px;
             width: 90%;
         }
-        td > input{
+
+        td>input {
             display: none;
         }
     </style>
@@ -147,10 +148,7 @@
             alt="" aria-hidden="true" role="presentation" style="width:109px;height:40px">
         <div id="search_bar">
             <input type="text" name="" id="search" placeholder="Search Google or Type a URL">
-            <!-- <div>  <i
-            class="fa-sharp fa-solid fa-magnifying-glass"
-            style="color: #00040D;"
-          ></i></div> -->
+           
             <div style="position: relative;"><img src="https://static.thenounproject.com/png/4775351-200.png" alt=""
                     style="width: 35px;position: absolute;left: 660px;top: 2px;"></div>
 
@@ -186,7 +184,7 @@
         <div
             style="position: relative;display: inline-block;width: 300px;border-right: 2px solid rgb(123, 206, 206);height: 100vh;width: 20%;">
             <button id="Compose"><span class="material-symbols-outlined" style="text-align: center;">
-                edit
+                    edit
                 </span>Compose</button><br>
             <button class="btn2"><span class="material-symbols-outlined">
                     all_inbox
@@ -245,20 +243,17 @@
         </div>
         <div style="background-color: rgb(210, 221, 230);border: 2px solid rgb(123, 206, 206); width: 400px;height: 300px;position: absolute;bottom: 0;right: 0;display: none;"
             id="displ">
-            <!-- <input class="int" id="in1" type="text" placeholder="Enter User Id..."><br> -->
-            <input class="int" id="in2" type="text" placeholder="Enter Id..."><br>
             <input class="int" id="in3" type="text" placeholder="Enter Title..."><br>
             <input class="int" id="in4" type="text" placeholder="Enter Some Description..."><br>
             <button
                 style="width: 100px;padding: 10px;margin-top: 25px; margin-left: 150px;border: 2px solid rgb(123, 206, 206);background-color: rgb(210, 221, 230);border-radius: 5px;"
                 id="post1">Post</button>
-                <button
+            <button
                 style="width: 100px;padding: 10px;margin-top: 25px; margin-left: 150px;border: 2px solid rgb(123, 206, 206);background-color: rgb(210, 221, 230);border-radius: 5px;"
                 id="canc">Cancel</button>
         </div>
     </div>
     <Script>
-        // var total_div=document.getElementById('Post_Todo_User')
         var Posts_2 = document.getElementById('Posts');
         var P_table = document.getElementById("P-table");
         Posts_2.addEventListener('click', function () {
@@ -314,7 +309,7 @@
                             document.getElementById("id" + y).style.display = "block"
                             document.getElementById("title" + y).style.display = "block"
                             document.getElementById("Body" + y).style.display = "block"
-                            document.getElementById("edit"+ y).style.display="block"
+                            document.getElementById("edit" + y).style.display = "block"
                         })
                         var editbtn = document.createElement("Button");
                         editbtn.textContent = "Edit";
@@ -433,7 +428,7 @@
                             document.getElementById("id" + y).style.display = "block"
                             document.getElementById("title" + y).style.display = "block"
                             document.getElementById("Body" + y).style.display = "block"
-                            document.getElementById("edit"+ y).style.display="block"
+                            document.getElementById("edit" + y).style.display = "block"
                         })
                         var editbtn = document.createElement("Button");
                         editbtn.textContent = "Edit";
@@ -532,8 +527,6 @@
                         input_title.id = "title" + i
                         tTitle.appendChild(input_title);
                         trow.appendChild(tTitle)
-                        // table.appendChild(trow)
-                        // Post_Todo_User_2.appendChild(table)
                         var tBody = document.createElement("td")
                         tBody.id = "tBody" + i
                         var node = document.createTextNode(data[i].company.name)
@@ -554,7 +547,7 @@
                             document.getElementById("id" + y).style.display = "block"
                             document.getElementById("title" + y).style.display = "block"
                             document.getElementById("Body" + y).style.display = "block"
-                            document.getElementById("edit"+ y).style.display="block"
+                            document.getElementById("edit" + y).style.display = "block"
                         })
                         var editbtn = document.createElement("Button");
                         editbtn.textContent = "Edit";
@@ -620,38 +613,46 @@
 
 
 
+
         var post = document.getElementById('post1');
-        // var int1 = document.getElementById('in1');
-        var int2 = document.getElementById('in2');
-        var int3 = document.getElementById('in3');
-        var int4 = document.getElementById('in4');
-        let v = fetch('https://jsonplaceholder.typicode.com/posts/');
-        post.addEventListener('click', function () {
-            alert("successfully Added")
-            // v.append(int2.value,int3.value,int4.value)
-            // fetch('https://jsonplaceholder.typicode.com/posts/',
-            //     {
-            //         method: "POST",
-            //         headers: {
-            //             'Content-Type': 'application/json; charset=UTF-8',
-            //         },
-            //         body: JSON.stringify({
-            //             id: int2.value,
-            //             title: int3.value,
-            //             body: int4.value,
-            //         })
-            //     })
-
-
+        // var int2 = document.getElementById('in2').value;
+        var int3 = document.getElementById('in3').value;
+        var int4 = document.getElementById('in4').value;
+        post.addEventListener("click", function (e) {
+            e.preventDefault()
+            const apiUrl = "https://jsonplaceholder.typicode.com/posts";
+            const newData = {
+                title: int3.value,
+                body: int4.value,
+            };
+            fetch(apiUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log("New data added:", data);
+                })
+                .catch(error => {
+                    console.error("Error adding new data:", error);
+                });
         })
+
+
         var com = document.getElementById("Compose");
         com.addEventListener('click', function () {
             document.getElementById('displ').style.display = "block";
         })
-        var can=document.getElementById('canc');
-        can.addEventListener('click',function(){
+        var can = document.getElementById('canc');
+        can.addEventListener('click', function () {
+            // formclear();
+
             document.getElementById('displ').style.display = "none";
-            
+
+
         })
 
 
