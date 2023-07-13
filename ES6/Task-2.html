@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="arrayDropdown"
+        style="outline:none;padding: 0.4rem;border-radius: 5px; border: none; box-shadow: 0 0 10px rgb(202, 202, 202);margin: 0.8rem;"></select>
+    <img id="myImg" src="" width="107" height="98" style="display: none;">
+    <script>
+        var arr = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
+        let petImage = [{ name: 'dog', image: 'src/dog.jpg' }, { name: 'chicken', image: ' src/chicken.jpg' }]
+        var options = "";
+
+        arr.map((op, i) => {
+            options += `<option value="${op}" id="${i}" style="border-radius: 5px;"">${op}</option>`
+        })
+        document.getElementById("arrayDropdown").innerHTML = options;
+        function renderImage() {
+var selected = document.getElementById("arrayDropdown");
+var imgUrl = "";
+if (selected.value == 'dog') {
+    imgUrl = "https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80";
+    document.getElementById("myImg").style.display='block';
+
+} else if (selected.value == 'chicken') {
+    imgUrl = "https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80";
+} else {
+    imgUrl = "";
+}
+
+document.getElementById("myImg").src = imgUrl;
+        }
+        // document.getElementById("myImg").src = imgUrl;
+    </script>
+</body>
+
+</html>
