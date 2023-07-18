@@ -354,42 +354,6 @@ console.log(count_3);
 
 
 
-        //Task-1
-
-
-
-// const students = [
-//     { name: "Alice", scores: [90, 85, 92] },
-//     { name: "Bob", scores: [75, 80, 85] },
-//     { name: "Charlie", scores: [90, 95, 85] },
-//     { name: "David", scores: [100, 100, 100] }
-//   ];
-//   var add=0;
-//   var res=[];
-//   let NewArray=students.map((item,i)=>{
-//     var sum=item.scores;
-//     let NewArray=sum.map((item,i)=>{
-        
-//         add=add+item;
-//     })
-//     var avg=add/3;
-//     res.push(avg);
-//     item.average=avg;
-    
-//     add=0;
-    
-//     })
-//     console.log(students);
-
-//     const result=students.filter(item=>{
-//         return item.average>=90;
-//     })
-
-//     console.log(result);
-
-
-
-        //----------END----------
   
 
 
