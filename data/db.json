@@ -1,0 +1,8 @@
+{
+    "blogs":[
+        {"title":"mynew website","body":"lorem ipsum......","author":"renu","id":1 },
+        {"title":"welcome party!","body":"lorem ipsum......","author":"renuka","id":2 },
+        {"title":"web dev top tips","body":"lorem ipsum......","author":"renuka pasam","id":3}
+
+    ]
+}
