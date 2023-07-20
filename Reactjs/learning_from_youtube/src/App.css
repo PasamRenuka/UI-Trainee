@@ -2,6 +2,13 @@
 
 .App {
   text-align: center;
+  background-color: black;
+}
+
+#sub {
+  display: none;
+  margin-left: 100px;
+  margin-top: 5px;
 }
 
 .App-logo {
@@ -25,20 +32,20 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding-left: 400px;
-  
+
 }
 
 .App-link {
   color: #61dafb;
 }
 
-* {
+/* *{
   margin: 0;
   font-family: "Quicksand";
   color: #333;
-}
+} */
 
-.navbar {
+/*.navbar {
   padding: 20px;
   display: flex;
   align-items: center;
@@ -99,15 +106,15 @@
   color: white;
   background-color:rgb(47, 137, 255) ;
 } */
-textarea{
+/* textarea{
   margin-left: 50px;
   background-color: rgb(238, 164, 99);
   border-radius: 10px;
   border: none;
   width: 500px;
   height: 300px;
-}
-.Sub{
+} */
+/* .Sub{
      padding: 15px;
      width: 100px;
      margin-right: 20px;
@@ -116,8 +123,8 @@ textarea{
      background-color:rgb(167, 221, 221) ;
      border: none;
      border-radius: 10px;
-}
-.clear{
+} */
+/* .clear{
   padding: 15px;
   width: 100px;
   margin-right: 20px;
@@ -126,8 +133,8 @@ textarea{
   background-color:rgb(167, 221, 221) ;
   border: none;
   border-radius: 10px;
-}
-p{
+} */
+/* p{
   margin-top: 20px;
   border: 1px solid black;
   width: 600px;
@@ -138,12 +145,121 @@ p{
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 10px;
-}
-h1{
+} */
+/* h1{
   background-color: #e37a9a;
   text-align: center;
   height: 70px;
   padding-top: 25px;
+} */
+*/ .main {
+  background-color: black;
+}
+
+.App {
+  text-align: center;
+  background-color: black;
+
+}
+
+form {
+  border: 2px solid green;
+  padding: 30px;
+  background-color: rgb(89, 154, 89);
+}
+
+img {
+  height: 120px;
+  /* margin-left: 0px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  /* display: block; */
+  /* display: inline;
+  left: 3; */
+
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.Display {
+  border: 1px solid black;
+  width: 600px;
+  height: 500px;
+  /* overflow: scroll; */
+  overflow: initial;
+  margin-top: 20px;
+  margin-right: 400px;
+  border-radius: 10px;
+  background-color: aquamarine;
+
+}
+
+/* .Display> div{
+    align-items: start;
+    width: 130px;
+  } */
+
+/* p{
+  display: inline-block;
+} */
+form {
+  margin-right: 400px;
+  margin-top: 10px;
+
+}
+
+textarea {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+
+}
+
+p {
+  margin-top: 1px;
+  margin-left: 25px;
+  width: 100px;
+  /* display: inline; */
+}
+
+.para {
+  display: inline;
+  margin-left: 50px;
+
+
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+
+}
+
+select {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
 }
 
 
