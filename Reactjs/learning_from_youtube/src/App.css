@@ -2,7 +2,6 @@
 
 .App {
   text-align: center;
-  background-color: black;
 }
 
 #sub {
@@ -11,179 +10,25 @@
   margin-top: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  /* display: flex; */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  padding-left: 400px;
-
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-/* *{
-  margin: 0;
-  font-family: "Quicksand";
-  color: #333;
-} */
-
-/*.navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-}
-
-.navbar h1 {
-  color: #f1356d;
-}
-
-.navbar .links {
-  margin-left: auto;
-}
-
-.navbar a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-}
-
-.navbar a:hover {
-  color: #f1356d;
-}
-
-.content {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-}
-.blog-preview{
-  padding: 10px 16px;
-  margin: 20p 0;
-  border-bottom: 1px solid #fafafa;
-}
-.blog-preview:hover{
-  box-shadow: 1px 3px 5px rgb(0,0, 0,0.1);;
-}
-.blog-preview h2{
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 8px;
-}
-.comment-btn {
-  background-color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-size: 15px;
-  height: 50px;
-  width: 100px;
-  margin: 20px;
-  margin-left: 30px;
-  cursor: pointer;
-  background-color: pink;
-}
-/* .comment-btn > button:hover{
-  color: white;
-  background-color:rgb(47, 137, 255) ;
-} */
-/* textarea{
-  margin-left: 50px;
-  background-color: rgb(238, 164, 99);
-  border-radius: 10px;
-  border: none;
-  width: 500px;
-  height: 300px;
-} */
-/* .Sub{
-     padding: 15px;
-     width: 100px;
-     margin-right: 20px;
-     margin-left: 120px;
-     margin-top: 20px;
-     background-color:rgb(167, 221, 221) ;
-     border: none;
-     border-radius: 10px;
-} */
-/* .clear{
-  padding: 15px;
-  width: 100px;
-  margin-right: 20px;
-  margin-left: 60px;
-  margin-top: 20px;
-  background-color:rgb(167, 221, 221) ;
-  border: none;
-  border-radius: 10px;
-} */
-/* p{
-  margin-top: 20px;
-  border: 1px solid black;
-  width: 600px;
-  height: 300px;
-  font-size: 15px;
-  background-color: #8cd2e6;
-  border: none;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-} */
-/* h1{
-  background-color: #e37a9a;
-  text-align: center;
-  height: 70px;
-  padding-top: 25px;
-} */
-*/ .main {
-  background-color: black;
-}
-
-.App {
-  text-align: center;
-  background-color: black;
-
-}
-
 form {
-  border: 2px solid green;
+  border: 2px solid rgb(132, 112, 24);
   padding: 30px;
-  background-color: rgb(89, 154, 89);
+  background-color: transparent;
+  border-radius: 10px;
+  margin-right: 400px;
+  margin-bottom: 250px;
+  color: rgb(132, 112, 24);
 }
 
 img {
   height: 120px;
-  /* margin-left: 0px; */
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  /* display: block; */
-  /* display: inline;
-  left: 3; */
-
+  margin-top: 60px;
   border: 1px solid black;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .App-header {
-  background-color: white;
+  padding-left: 400px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -191,84 +36,93 @@ img {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://images.hdqwalls.com/wallpapers/yellow-flower-fence-dark-black-background-ex.jpg');
 }
 
 .Display {
-  border: 1px solid black;
-  width: 600px;
-  height: 500px;
-  /* overflow: scroll; */
-  overflow: initial;
+  border: 1px solid rgb(132, 112, 24);
+  background-color: transparent;
+  width: 700px;
+  height: 400px;
+  display: flex;
   margin-top: 20px;
   margin-right: 400px;
   border-radius: 10px;
-  background-color: aquamarine;
+  color: rgb(132, 112, 24);
+  box-shadow: 5px 5px 5px rgb(167, 151, 79);
+}
+
+span {
+  width: 217px;
+  text-overflow: ellipsis;
+  overflow-x: overlay;
+}
+
+.rating {
+  margin-left: 17px;
+  color: rgb(132, 112, 24);
+}
+
+.name {
+  margin-left: 10px;
+  color: rgb(132, 112, 24);
 
 }
 
-/* .Display> div{
-    align-items: start;
-    width: 130px;
-  } */
-
-/* p{
-  display: inline-block;
-} */
-form {
-  margin-right: 400px;
-  margin-top: 10px;
-
+.location {
+  margin-left: 9px;
+  color: rgb(132, 112, 24);
 }
 
 textarea {
   margin-top: 10px;
   border-radius: 5px;
   padding: 5px;
-  border: none;
-
+  border: 1px solid rgb(132, 112, 24);
+  background-color: transparent;
+  color: rgb(132, 112, 24);
 }
 
 p {
-  margin-top: 1px;
+  margin-top: 1px; 
   margin-left: 25px;
   width: 100px;
-  /* display: inline; */
 }
 
 .para {
-  display: inline;
+  display: block;
   margin-left: 50px;
+  margin-top: 10px;
+}
 
-
+.img1 {
+  display: block;
+  margin: 50px;
 }
 
 input {
   border-radius: 5px;
   padding: 5px;
-  border: none;
-
+  border: 1px solid rgb(132, 112, 24);
+  background-color: transparent;
+  color: rgb(132, 112, 24);
 }
 
 select {
   border-radius: 5px;
   padding: 5px;
-  border: none;
+  border: 1px solid rgb(132, 112, 24);
+  background-color: transparent;
 }
 
 button {
   padding: 10px;
   border-radius: 5px;
   background-color: white;
-  border: none;
-}
+  border: 1px solid rgb(132, 112, 24);
+  background-color: transparent;
+  color: rgb(132, 112, 24);
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
 }
