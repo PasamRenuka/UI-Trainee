@@ -1,4 +1,5 @@
-import  "./ContactUs";
+
+import  "./Contact";
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -9,11 +10,7 @@ const Navbar = () => {
         className="links"
         style={{ display: "inline-block", marginLeft: "500px" }}
       >
-        <a href="/Home" style={{ marginRight: "15px" }}>
-          Home
-        </a>
-        <a href="#Contact" className="Con">Contact us</a>
-        <a href="#post" className="Con" style={{marginLeft:"15px"}}>Update</a>
+        {/* <Router/> */}
       
         <button className="login">Login</button>
       </div>
