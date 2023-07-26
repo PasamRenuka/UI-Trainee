@@ -64,13 +64,22 @@ tr:hover {background-color: #5dd6d6;}
   margin-bottom: 20px;
 }
 .list{
-  /* text-decoration: none; */
   list-style-type: none;
   display:inline-block;
   margin-right: 10px;
+  background-color: #5dd6d6;
+  padding: 10px;
+  width:100px;
+  text-align: center;
+  border-radius: 10px;
+  color: black;
 }
 ul{
-  margin-right: 650px;
+  text-align: center;
+}
+.Link{
+  text-decoration: none;
+  color: black;
 }
 
 @keyframes App-logo-spin {

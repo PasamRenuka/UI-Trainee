@@ -6,7 +6,7 @@ import Contact from "./Contact";
 import NoPage from "./Nopages";
 import Crud from "./CRUD";
 
- function Router() {
+function Router() {
   return (
     <BrowserRouter>
       <Routes>

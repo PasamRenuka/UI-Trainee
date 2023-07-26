@@ -1,9 +1,6 @@
-import Post from './Post';
+import Post from "./Post";
 const Blogs = () => {
-    // return <h1>Blog Articles</h1>;
-    return(
-      <Post/>
-    )
-  };
-  
-  export default Blogs;
+  return <Post />;
+};
+
+export default Blogs;

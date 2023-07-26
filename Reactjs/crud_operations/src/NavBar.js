@@ -1,5 +1,4 @@
-
-import  "./Contact";
+import "./Contact";
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -10,8 +9,6 @@ const Navbar = () => {
         className="links"
         style={{ display: "inline-block", marginLeft: "500px" }}
       >
-        {/* <Router/> */}
-      
         <button className="login">Login</button>
       </div>
     </nav>
