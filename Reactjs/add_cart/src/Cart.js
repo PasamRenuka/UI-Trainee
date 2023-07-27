@@ -1,9 +1,9 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Navbar from "./NavBar";
+import Navbar from "./Navbar";
 
-function Crud() {
+function Cart(props) {
   const url = "http://localhost:8000/blogs";
   const [data, setData] = useState([]);
   const [message, setMessage] = useState("");
@@ -58,11 +58,7 @@ function Crud() {
 
     fetchInfo();
   };
-  // const handleCart=(data,price)=>{
-  //   axios.post('http://localhost:7000/data/',{price,data});
-      
-  // }
-
+const {handleCartNow}=props;
   return (
     <div className="App">
       <Navbar />
@@ -79,7 +75,6 @@ function Crud() {
             <th scope="col">Delete</th>
             <th scope="col">Add Cart</th>
 
-            {/* <th scope="col">Post</th> */}
           </tr>
         </thead>
         <tbody>
@@ -116,8 +111,9 @@ function Crud() {
                 </td>
                 <td>
                   <button className="btn" 
-                  // onClick={()=>{handleCart(dataObj.price,dataObj.name);
-                  // }}
+                  onClick={()=>{handleCartNow(dataObj.name,dataObj.price)
+                  }}
+                
                   >
                     Add Cart
                   </button>
@@ -222,4 +218,4 @@ function Crud() {
   );
 }
 
-export default Crud;
+export default Cart;

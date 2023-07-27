@@ -33,6 +33,7 @@ const BlogList = ({blogs,title,handleDelete}) => {
             <p> <img src={blog.image}></img></p>
             <p className="price">Price : {blog.price}</p>
             <button onSubmit={()=>handleSubmit()} className="buy">Buy Now</button>
+            
             </div>
     ))} 
     </div>
