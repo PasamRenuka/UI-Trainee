@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 
-const Layout = ({data}) => {
+const Layout = ({ data }) => {
   return (
     <>
       <nav>
@@ -12,7 +12,9 @@ const Layout = ({data}) => {
           </li>
           <li className="list">
             <Link to="/Cart" className="Link">
-              Cart  <button>{data.length}</button>
+              Cart
+               {data.length > 0 ? (
+                <button className="cartBtn">{data?.length}</button>):('')}
             </Link>
           </li>
           <li className="list">

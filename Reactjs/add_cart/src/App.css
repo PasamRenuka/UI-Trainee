@@ -27,34 +27,37 @@
 .App-link {
   color: #61dafb;
 }
-th, td {
+th,
+td {
   text-align: left;
   padding: 8px;
 }
 tr:nth-child(even) {
-  background-color: #D6EEEE;
+  background-color: #d6eeee;
 }
-td, th {
-  border: 1px solid  #5dd6d6;
+td,
+th {
+  border: 1px solid #5dd6d6;
   text-align: left;
   padding: 8px;
 }
 table {
   border-collapse: collapse;
 }
-tr:hover {background-color: #5dd6d6;}
-.btn{
+tr:hover {
+  background-color: #5dd6d6;
+}
+.btn {
   padding: 5px;
   border: 2px solid #5dd6d6;
   border-radius: 10px;
   background-color: white;
   margin-top: 5px;
 }
-.navbar{
+.navbar {
   background-color: rgb(177, 232, 232);
-  
 }
-.login{
+.login {
   margin-left: 540px;
   width: 100px;
   padding: 10px;
@@ -63,37 +66,70 @@ tr:hover {background-color: #5dd6d6;}
   background-color: rgb(61, 197, 197);
   margin-bottom: 20px;
 }
-.list{
+.list {
   list-style-type: none;
-  display:inline-block;
+  display: inline-block;
   margin-right: 10px;
   background-color: #5dd6d6;
   padding: 10px;
-  width:100px;
+  width: 100px;
   text-align: center;
   border-radius: 10px;
   color: black;
 }
-ul{
+ul {
   text-align: center;
 }
-.Link{
+.Link {
   text-decoration: none;
   color: black;
 }
-.para{
+.para {
   text-align: center;
   margin-top: 300px;
   font-size: 50px;
   color: rgb(231, 229, 229);
 }
-.cartTable{
+.cartTable {
   width: 100%;
 }
 
-
-.Total{
-  background-color:  #5dd6d6;
+.Total {
+  background-color: #5dd6d6;
+}
+.cartBtn{
+  border-radius: 50%;
+  background-color: red;
+  border: none;
+}
+.display{
+  background-color: white;
+          width: 100%;
+          height: 100vh;
+          text-align: center;
+          padding: 30px;
+}
+form{
+  margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(61, 197, 197);
+            width: 500px;
+            height: 300px;
+            border-radius:10px;
+            padding: 25px;
+            margin-top: 100px;
+}
+.Input{
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+}
+.postBtmn{
+  background-color: white;
+              border: none;
+              padding: 10px;
+              border-radius: 10px;
 }
 @keyframes App-logo-spin {
   from {

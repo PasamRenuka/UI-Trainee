@@ -12,53 +12,51 @@ function Cart(props) {
     name: "",
     email: "",
     body: "",
-    price:"",
+    price: "",
   });
 
   const fetchInfo = () => {
-    return axios.get(url).then((res) => setData(res.data));
+    return axios?.get(url)?.then((res) => setData(res?.data));
   };
-  
 
   useEffect(() => {
     fetchInfo();
   }, []);
 
   const handleDelete = (index) => {
-    // console.log(index);
-    axios.delete(`http://localhost:8000/blogs/${index}`);
+    axios?.delete(`http://localhost:8000/blogs/${index}`);
 
     fetchInfo();
   };
   const handleChange = (event) => {
-    setMessage(event.target.value);
+    setMessage(event?.target?.value);
   };
 
   const handleAddChange = (e) => {
     setMsg(() => ({
       ...msg,
-      [e.target.name]: e.target.value,
+      [e?.target?.name]: e?.target?.value,
     }));
   };
 
   const handleUpdate = (index) => {
     axios.put(`http://localhost:8000/blogs/${index.id}`, {
       name: `${message}`,
-      id: `${index.id}`,
-      postId: `${index.postId}`,
-      email: `${index.email}`,
-      body: `${index.body}`,
-      price:`${index.price}`
+      id: `${index?.id}`,
+      postId: `${index?.postId}`,
+      email: `${index?.email}`,
+      body: `${index?.body}`,
+      price: `${index?.price}`,
     });
 
     fetchInfo();
   };
   const handlePost = () => {
-    axios.post(`http://localhost:8000/blogs/`, msg);
+    axios?.post(`http://localhost:8000/blogs/`, msg);
 
     fetchInfo();
   };
-const {handleCartNow}=props;
+  const { handleCartNow } = props;
   return (
     <div className="App">
       <Navbar />
@@ -74,19 +72,18 @@ const {handleCartNow}=props;
             <th scope="col">Update Title</th>
             <th scope="col">Delete</th>
             <th scope="col">Add Cart</th>
-
           </tr>
         </thead>
         <tbody>
-          {data.map((dataObj, index) => {
+          {data?.map((dataObj, index) => {
             return (
               <tr key={index}>
-                <td>{dataObj.postId}</td>
-                <td>{dataObj.id}</td>
-                <td>{dataObj.name}</td>
-                <td>{dataObj.email}</td>
-                <td>{dataObj.body}</td>
-                <td>{dataObj.price}</td>
+                <td>{dataObj?.postId}</td>
+                <td>{dataObj?.id}</td>
+                <td>{dataObj?.name}</td>
+                <td>{dataObj?.email}</td>
+                <td>{dataObj?.body}</td>
+                <td>{dataObj?.price}</td>
 
                 <td>
                   <input onChange={handleChange}></input>
@@ -102,7 +99,7 @@ const {handleCartNow}=props;
                 <td>
                   <button
                     onClick={() => {
-                      handleDelete(dataObj.id);
+                      handleDelete(dataObj?.id);
                     }}
                     className="btn"
                   >
@@ -110,10 +107,11 @@ const {handleCartNow}=props;
                   </button>
                 </td>
                 <td>
-                  <button className="btn" 
-                  onClick={()=>{handleCartNow(dataObj.name,dataObj.price)
-                  }}
-                
+                  <button
+                    className="btn"
+                    onClick={() => {
+                      handleCartNow(dataObj?.name, dataObj?.price);
+                    }}
                   >
                     Add Cart
                   </button>
@@ -123,93 +121,44 @@ const {handleCartNow}=props;
           })}
         </tbody>
       </table>
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "100%",
-          height: "100vh",
-          textAlign: "center",
-          padding: "30px",
-        }}
-        id="post"
-      >
-        <form
-          style={{
-            marginLeft: "auto",
-            marginRight: "auto",
-            backgroundColor: "rgb(61, 197, 197)",
-            width: "500px",
-            height: "300px",
-            borderRadius: "10px",
-            padding: "25px",
-            marginTop: "100px",
-          }}
-        >
+      <div id="post" className="display">
+        <form>
           <h1>Post Method</h1>
           <label>Post Id : </label>
           <input
+            className="Input"
             type="number"
             name="postId"
             onChange={handleAddChange}
-            style={{
-              marginBottom: "15px",
-              padding: "8px",
-              borderRadius: "10px",
-              border: "none",
-            }}
           />
           <br />
           <label>Name : </label>
           <input
+            className="Input"
             type="text"
             name="name"
             maxLength={32}
             onChange={handleAddChange}
-            style={{
-              marginBottom: "15px",
-              padding: "8px",
-              borderRadius: "10px",
-              border: "none",
-            }}
           />
           <br />
           <label>email : </label>
           <input
+            className="Input"
             type="email"
             name="email"
             onChange={handleAddChange}
-            style={{
-              marginBottom: "15px",
-              padding: "8px",
-              borderRadius: "10px",
-              border: "none",
-            }}
           />
           <br />
           <label>Body : </label>
           <input
+            className="Input"
             type="text"
             name="body"
             onChange={handleAddChange}
-            style={{
-              marginBottom: "15px",
-              padding: "8px",
-              borderRadius: "10px",
-              border: "none",
-            }}
           />
           <br />
 
-          <button
-            type="submit"
-            style={{
-              backgroundColor: "white",
-              border: "none",
-              padding: "10px",
-              borderRadius: "10px",
-            }}
-            onClick={handlePost}
-          >
+          <button className="postBtmn" type="submit" onClick={handlePost}>
             post
           </button>
         </form>
