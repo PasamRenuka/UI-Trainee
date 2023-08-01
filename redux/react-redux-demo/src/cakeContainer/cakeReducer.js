@@ -1,4 +1,4 @@
-import { BUY_CAKE } from './redux_2/cakeTypes'
+import { BUY_CAKE } from '../redux_2/cakeTypes'
 
 const intinitialState={
     numOfCakes:10

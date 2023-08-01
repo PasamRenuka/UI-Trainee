@@ -1,5 +1,5 @@
 import React ,{useEffect} from 'react'
-import { Connect, connect } from 'react-redux'
+import { connect } from 'react-redux'
 import { fetchUsers } from './User/userActions'
 
 

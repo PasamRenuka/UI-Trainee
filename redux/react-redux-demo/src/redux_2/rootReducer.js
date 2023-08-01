@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import cakeReducer from "../cakeReducer";
+import cakeReducer from "../cakeContainer/cakeReducer";
 import iceCreamReducer from "../iceCream/iceCreamReducers";
 import userReducer from'../User/userReducer'
 
