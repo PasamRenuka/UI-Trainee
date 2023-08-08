@@ -12,9 +12,10 @@ function Router() {
 
   const [total, setTotal] = useState(0);
 
-  const handleCartNow = (name, price) => {
-    setCart([...cart, { name: name, price: price }]);
+  const handleCartNow = (name, price,id) => {
+    setCart([...cart, { name: name, price: price ,id: id}]);
     setTotal(total + price);
+    console.log("chek abc",cart)
   };
 
   return (

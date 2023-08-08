@@ -11,6 +11,21 @@ const CartDisplay = ({ data, setCart }) => {
     return total;
   };
   let TotalPrice = sum(data);
+  const getUniqueData = (arr) => {
+    const countMap = new Map();
+    arr.forEach((item) => {
+      const id = item.id;
+      countMap.set(id, (countMap.get(id) || 0) + 1);
+    });
+    const uniqueData = arr.filter((item, index) => {
+      return index === arr.findIndex((obj) => obj.id === item.id);
+    });
+    return uniqueData.map((item) => ({
+      ...item,
+      occurrences: countMap.get(item.id),
+    }));
+  };
+  const uniqueData = getUniqueData(data);
   const handleCartDelete = (index) => {
     const delitem = data?.filter((_, i) => i !== index);
     setCart(delitem);
@@ -22,16 +37,21 @@ const CartDisplay = ({ data, setCart }) => {
         <table className="cartTable">
           <thead>
             <tr>
+            <th>S/No </th>
               <th>Product Name</th>
               <th>Price</th>
+              <th>Quantity</th>
               <th>Delete</th>
             </tr>
           </thead>
           <tbody>
-            {data?.map((product, index) => (
+            {console.log(uniqueData)}
+            {uniqueData?.map((product, index) => (
               <tr key={index}>
-                <td>{product?.name}</td>
+                 <td>{index+1}</td>
+                <td className="Name">{product?.name}</td>
                 <td>{product?.price}</td>
+                <td>{product?.occurrences}</td>
                 <td>
                   {" "}
                   <button
@@ -45,11 +65,11 @@ const CartDisplay = ({ data, setCart }) => {
             ))}
           </tbody>
           <tr>
-            <td className="Total">
+            <td colspan="2" className="Total">
               <b>Total</b>
             </td>
 
-            <td colspan="2" style={{ textAlign: "center" }}>
+            <td colspan="3" style={{ textAlign: "center" }}>
               {" "}
               <b>{TotalPrice} </b>
             </td>

@@ -110,7 +110,7 @@ function Cart(props) {
                   <button
                     className="btn"
                     onClick={() => {
-                      handleCartNow(dataObj?.name, dataObj?.price);
+                      handleCartNow(dataObj?.name, dataObj?.price,dataObj?.id);
                     }}
                   >
                     Add Cart

@@ -54,6 +54,9 @@ tr:hover {
   background-color: white;
   margin-top: 5px;
 }
+.Name{
+  width: 400px;
+}
 .navbar {
   background-color: rgb(177, 232, 232);
 }
