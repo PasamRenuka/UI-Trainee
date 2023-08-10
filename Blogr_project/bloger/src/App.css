@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+h2{
+  color: white;
+  display: inline;
+  margin-right: 100px;
+  font-size: 30px;
+
+}
+#nav_para{
+  color: white;
+  
+}
+#desktop_img{
+  width: 600px;
+  height: 700px;
+}
+#combine_section{
+  display: flex;
+  /* flex-direction: column; */
+}
+h1{
+  color: white;
+  font-size: 50px;
+  margin: 0%;
+  margin-top: 80px;
+}
+.Start_learn{
+  color: white;
+  background:none;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  border: 1px solid white;
+  margin-top: 10px;
+
+}
+#section_2_para{
+  margin-left: 200px;
+  width: 500px;
+}
+#para_section{
+  margin-top: 90px;
+  text-align: start;
+  margin-right: 200px;
+}
+
+#footer_bloger{
+  text-align: center;
+}
+.Start_learn:hover{
+  background-color: white;
+  color: rgb(255,80,91);
+}
+.menu{
+  display: inline;
+  margin-right: 370px;
+}
+.nav_top{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.login_signup{
+  color: white;
+  background:none;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  width: 100px;
+}
+.login_signup:hover{
+  background-color: white;
+  color: rgb(255,80,91);
+}
+
+#start{
+  width: 120px;
+  margin-right: 20px;
+}
+#dropdown{
+  display: inline;
+  color: white;
+  padding-left: 20px;
+  font-size: small;
+
+}
+#login{
+  margin-left: 100px;
+}
+nav{
+  background-color: rgb(255,132,109);
+  background-image: url('./images/bg-pattern-intro-desktop.png');
+  background-size:2000px;
+  background-repeat: no-repeat;
+  background-position: center ;
+  padding-bottom: 90px;
+  border-radius: 0px 0px 0px 90px;
+  margin-bottom: 110px;
+}
+#section_2{
+  color:rgb(45,46,64);
+  font-size: 35px;
+  text-align: center;
+  margin-left: 500px;
+}
+#heading_section2{
+  color:rgb(59, 61, 83);
+  margin-left: 200px;
+  font-size: 25px;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+footer{
+  background-color:rgb(45,46,64) ;
+  padding-top: 35px;
+  border-radius: 0px 70px 0px 0px;
+  /* display: flex;
+  justify-content: space-evenly; */
+
+  
+}
+td{
+  color: grey;
+  font-size: 11px;
+  padding: 5px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+th,td{
+  color: white;
+  text-align: start;
+}
+table{
+  width: 100%;
+}
+th{
+  padding-bottom: 20px;
+}
+#footer_All{
+  display: inline; 
+  justify-content: space-around;
+}
+
+
+
